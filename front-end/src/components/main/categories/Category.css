@@ -4,22 +4,22 @@
     margin-right: 20px;
 }
 
-.prod-categories h2 {
+.prod-categories h1 {
     margin-bottom: 20px;
     font-weight: 500;
     color: purple;
     display: inline-block;
-    transition: border-bottom 0.7s ease;
+    transition: border-bottom 0.4s ease;
 }
 
-h2:hover {
-    border-bottom: 4px solid purple;
+h1:hover {
+    border-bottom: 7px solid purple;
 }
 
 .category {
     display: flex;
     justify-content: space-between;
-    position: relative;
+    /* position: relative; */
 }
 
 .cols {
@@ -34,7 +34,6 @@ h2:hover {
     width: 100%;
     height: auto;
     border-radius: 10px;
-    aspect-ratio: 1/1;
     object-fit: cover;
     transition: filter 0.3s ease;
 }

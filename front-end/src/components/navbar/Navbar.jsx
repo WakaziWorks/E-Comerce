@@ -1,30 +1,35 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Navbar.css';
+import logo from '../../assets/logo.jpg';
+import user from '../../assets/user.png';
+import cart from '../../assets/shopping-cart.png';
 
 const Navbar = () => {
     return (
         <nav className="navbar">
           <div className='navbar-items'>
-            <div className="navbar-logo">
-              <img src="image_path" alt="Logo" />
-            </div>
+            <a href='#'><img src={logo} alt="Logo" /></a>
             <div className='navbar-search'>
-              <input type='text' placeholder="I'm looking for..."></input>
-              <button>Search</button>
+              <label htmlFor='searchInput'>
+                <input type='text' id='searchInput' autoComplete='off' placeholder="I'm looking for..." />
+                <button type='submit'> Search </button>
+              </label>
             </div>
             <div className='navbar-icons'>
-              <img src='https://imgs.search.brave.com/hPmmyg8nuNX_TVLZVC-8ev60xCcMjUg9vyPWi6aDA-0/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9lbi5w/aW1nLmpwLzA0Ny82/OTUvMTk2LzEvNDc2/OTUxOTYuanBn' alt='account'></img>
-              <img src='https://imgs.search.brave.com/8Sdghc_LWqQEh0yNuuJnbmw5r6_TVvzW2aXn870S-tE/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/aWNvbnBhY2tzLm5l/dC9pY29ucy8zL2Zy/ZWUtaWNvbi1wdXJw/bGUtc2hvcHBpbmct/Y2FydC0xMDkxMS5w/bmc' alt='cart'></img>
+              <Link>
+                <img src={user} alt='user profile' />
+              </Link>
+              <img src={cart} alt='cart'></img>
             </div>
           </div>
           <div className='navbar-links'>
             <a href='/'>Home</a>
             <a href='#Products'>Products</a>
-            <a href='#Decor'>Decor</a>
-            <a href='#Accesories'>Accesories</a>
-            <a href='#Jewellery'>Jewellery</a>
-            <a href='#About'>About Us</a>
-            <a href='#Account'>Contact</a>
+            <a href='#Collection'>Collections</a>
+            <a href='#newArrivals'>New Arrivals</a>
+            <a href='#Collaborations'>Collaborations</a>
+            <a href='#Blog'>Blog</a>
           </div>
         </nav>
     );
