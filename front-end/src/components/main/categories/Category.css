@@ -1,0 +1,47 @@
+.prod-categories {
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.prod-categories h2 {
+    margin-bottom: 20px;
+    font-weight: 500;
+    color: purple;
+    display: inline-block;
+    transition: border-bottom 0.7s ease;
+}
+
+h2:hover {
+    border-bottom: 4px solid purple;
+}
+
+.category {
+    
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.cols {
+    flex: 1;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.cols img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    transition: filter 0.3s ease;
+}
+
+.cols h3 {
+    margin-top: 5px;
+    font-weight: 500;
+    color: purple;
+}
