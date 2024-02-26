@@ -1,0 +1,40 @@
+.footer {
+    background-color: purple;
+    margin-top: 40px;
+    color: white;
+    padding: 20px 30px;
+}
+
+.footer-cols {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+}
+
+.col {
+    flex: 1;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.col a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    white-space: pre-wrap;
+    margin-top: 14px;
+}
+
+a:hover {
+    border-bottom: 1px solid white;
+}
+img {
+    width: 35px;
+    height: 26px;
+    margin-left: 17px;
+}
+img:hover {
+    border-bottom: 0;
+}
