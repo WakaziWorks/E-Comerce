@@ -1,0 +1,20 @@
+[28-Feb-2024 23:42:29 UTC] PHP Warning:  require(/home/hexanetc/wakazi.co.ke/public_html/public/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/hexanetc/wakazi.co.ke/public_html/public/index.php on line 34
+[28-Feb-2024 23:42:29 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/hexanetc/wakazi.co.ke/public_html/public/../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php80/root/usr/share/pear') in /home/hexanetc/wakazi.co.ke/public_html/public/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/hexanetc/wakazi.co.ke/public_html/public/index.php on line 34
+[28-Feb-2024 23:47:33 UTC] PHP Warning:  require(/home/hexanetc/wakazi.co.ke/public_html/public/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/hexanetc/wakazi.co.ke/public_html/public/index.php on line 34
+[28-Feb-2024 23:47:33 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/hexanetc/wakazi.co.ke/public_html/public/../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php80/root/usr/share/pear') in /home/hexanetc/wakazi.co.ke/public_html/public/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/hexanetc/wakazi.co.ke/public_html/public/index.php on line 34
+[29-Feb-2024 08:34:22 UTC] PHP Warning:  require(/home/hexanetc/wakazi.co.ke/public_html/public/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/hexanetc/wakazi.co.ke/public_html/public/index.php on line 34
+[29-Feb-2024 08:34:22 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/hexanetc/wakazi.co.ke/public_html/public/../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php80/root/usr/share/pear') in /home/hexanetc/wakazi.co.ke/public_html/public/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/hexanetc/wakazi.co.ke/public_html/public/index.php on line 34
+[29-Feb-2024 08:35:21 UTC] PHP Warning:  require(/home/hexanetc/wakazi.co.ke/public_html/public/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/hexanetc/wakazi.co.ke/public_html/public/index.php on line 34
+[29-Feb-2024 08:35:21 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/hexanetc/wakazi.co.ke/public_html/public/../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php80/root/usr/share/pear') in /home/hexanetc/wakazi.co.ke/public_html/public/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/hexanetc/wakazi.co.ke/public_html/public/index.php on line 34

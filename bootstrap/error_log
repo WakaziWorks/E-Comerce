@@ -1,0 +1,4 @@
+[29-Feb-2024 08:35:29 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Application" not found in /home/hexanetc/wakazi.co.ke/bootstrap/app.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/hexanetc/wakazi.co.ke/bootstrap/app.php on line 14
