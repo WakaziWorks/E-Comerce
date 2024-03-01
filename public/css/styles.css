@@ -11259,6 +11259,7 @@ footer a:hover, footer a:active, footer a:focus {
   border-color: purple;
   box-shadow: 0 0 5px rgba(128, 0, 128, 0.5);
   color: purple;
+  cursor: pointer;
 }
 .prod-col img {
   width: 85%;

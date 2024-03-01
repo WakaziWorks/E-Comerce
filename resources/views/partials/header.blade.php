@@ -9,8 +9,8 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
-                        <li class="nav-item"><a class="nav-link me-lg-3" href="#home" style="color: purple;">Home</a></li>
-                        <li class="nav-item"><a class="nav-link me-lg-3" href="#products" style="color: purple;">Products</a></li>
+                        <li class="nav-item"><a class="nav-link me-lg-3" href="/home" style="color: purple;">Home</a></li>
+                        <li class="nav-item"><a class="nav-link me-lg-3" href="/products" style="color: purple;">Products</a></li>
                         <li class="nav-item"><a class="nav-link me-lg-3" href="#categories" style="color: purple;">Categories</a></li>
                         <li class="nav-item"><a class="nav-link me-lg-3" href="#blog" style="color: purple;">Blog</a></li>
                         <li class="nav-item"><a class="nav-link me-lg-3" href="#features" style="color: purple;">Features</a></li>
