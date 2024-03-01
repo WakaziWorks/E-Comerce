@@ -21,6 +21,8 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
+// Upload directory
+$uploadDirectory = "uploads/";
 // File upload functionality
 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_FILES["fileToUpload"])) {
     $uploadOk = 1;
@@ -28,10 +30,23 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_FILES["fileToUpload"])) {
     // Loop through each file
     foreach ($_FILES["fileToUpload"]["tmp_name"] as $key => $tmp_name) {
         $filename = $_FILES["fileToUpload"]["name"][$key];
-        
-        // Check file size (you can adjust the size limit as needed)
-        if ($_FILES["fileToUpload"]["size"][$key] > 5000000) {
+        $targetFilePath = $uploadDirectory . basename($filename);
+
+        // Check file size
+        if ($_FILES["fileToUpload"]["size"][$key] > 50000000000000) {
             $error = "Sorry, your file is too large.";
+            $uploadOk = 0;
+        }
+
+        // Check if file already exists
+        if (file_exists($targetFilePath)) {
+            $error = "Sorry, file already exists.";
+            $uploadOk = 0;
+        }
+
+        // Check for upload errors
+        if ($_FILES["fileToUpload"]["error"][$key] !== UPLOAD_ERR_OK) {
+            $error = "Upload error: " . $_FILES["fileToUpload"]["error"][$key];
             $uploadOk = 0;
         }
 
@@ -39,17 +54,26 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_FILES["fileToUpload"])) {
         if ($uploadOk == 0) {
             $error = "Sorry, your file was not uploaded.";
         } else {
-            // Upload file to database
-            $fileContent = addslashes(file_get_contents($_FILES["fileToUpload"]["tmp_name"][$key]));
-            $sql = "INSERT INTO uploaded_files (filename, file_content) VALUES ('$filename', '$fileContent')";
-            if ($conn->query($sql) === TRUE) {
-                $success = "File(s) uploaded successfully.";
+            // Try to upload file
+            if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"][$key], $targetFilePath)) {
+                // File uploaded successfully, save file details to database
+                $sql = "INSERT INTO uploaded_files (filename, filepath) VALUES ('$filename', '$targetFilePath')";
+                if ($conn->query($sql) === TRUE) {
+                    $success = "File(s) uploaded successfully.";
+                } else {
+                    $error = "Error uploading file(s) to database: " . $conn->error;
+                }
             } else {
-                $error = "Error: " . $sql . "<br>" . $conn->error;
+                // Log detailed error information
+                error_log("Error uploading file: " . print_r($_FILES["fileToUpload"], true));
+                $error = "Error uploading file(s). Please check server logs for more information.";
             }
         }
     }
 }
+
+
+
 
 // Fetch list of uploaded files
 $sql = "SELECT id, filename FROM uploaded_files";
