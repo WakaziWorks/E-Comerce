@@ -7,8 +7,10 @@
         <meta name="author" content="" />
         <title>Wakazi Works</title>
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+
         <!-- Bootstrap icons-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+
         <!-- Google fonts-->
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,600;1,600&amp;display=swap" rel="stylesheet" />
@@ -19,20 +21,26 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 
+        <!-- CSS files loading here -->
+        <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
     </head>
     <body id="page-top">
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
             <div class="container px-5">
-                <a class="navbar-brand fw-bold" href="#page-top"><img src="assets/img/WhatsApp_Image_2024-02-28_at_15.48.15-removebg-preview.png" height="90px" width="100px"></a>
+                <a class="navbar-brand fw-bold" href="#page-top"><img src="{{ asset('images/WhatsApp_Image_2024-02-28_at_15.48.15-removebg-preview.png') }}" height="90px" width="100px"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
                     <i class="bi-list"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
+                        <li class="nav-item"><a class="nav-link me-lg-3" href="#home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link me-lg-3" href="#products">Products</a></li>
+                        <li class="nav-item"><a class="nav-link me-lg-3" href="#categories">Categories</a></li>
+                        <li class="nav-item"><a class="nav-link me-lg-3" href="#blog">Blog</a></li>
                         <li class="nav-item"><a class="nav-link me-lg-3" href="#features">Features</a></li>
-                        <li class="nav-item"><a class="nav-link me-lg-3" href="#download">About us</a></li>
+                        <li class="nav-item"><a class="nav-link me-lg-3" href="#about">About us</a></li>
                     </ul>
                     <button class="btn btn-primary rounded-pill px-3 mb-2 mb-lg-0" data-bs-toggle="modal" data-bs-target="#feedbackModal">
                         <span class="d-flex align-items-center">
@@ -43,6 +51,7 @@
                 </div>
             </div>
         </nav>
+
         <!-- Mashead header-->
         <header class="masthead">
             <div class="container px-5">
@@ -50,11 +59,11 @@
                     <div class="col-lg-6">
                         <!-- Mashead text and app badges-->
                         <div class="mb-5 mb-lg-0 text-center text-lg-start">
-                            <h1 class="display-1 lh-1 mb-3">Wakazi eCommerce..</h1>
-                            <p class="lead fw-normal text-muted mb-5">empowering creativity</p>
+                            <h1 class="display-1 lh-1 mb-3">Wakazi Ecommerce..</h1>
+                            <p class="lead fw-normal text-muted mb-5">Empowering creativity</p>
                             <div class="d-flex flex-column flex-lg-row align-items-center">
-                                <a class="me-lg-3 mb-4 mb-lg-0" href="#!"><img class="app-badge" src="assets/img/google-play-badge.svg" alt="..." /></a>
-                                <a href="#!"><img class="app-badge" src="assets/img/app-store-badge.svg" alt="..." /></a>
+                                <a class="me-lg-3 mb-4 mb-lg-0" href="#!"><img class="app-badge" src="{{ asset('images/google-play-badge.svg') }}" alt="..." /></a>
+                                <a href="#!"><img class="app-badge" src="{{ asset('images/app-store-badge.svg') }}" alt="..." /></a>
                             </div>
                         </div>
                     </div>
@@ -68,8 +77,8 @@
                                         <stop class="gradient-end-color" offset="100%"></stop>
                                     </linearGradient>
                                 </defs>
-                                <circle cx="50" cy="50" r="50"></circle></svg
-                            ><svg class="shape-1 d-none d-sm-block" viewBox="0 0 240.83 240.83" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="50" cy="50" r="50"></circle></svg>
+                                <svg class="shape-1 d-none d-sm-block" viewBox="0 0 240.83 240.83" xmlns="http://www.w3.org/2000/svg">
                                 <rect x="-32.54" y="78.39" width="305.92" height="84.05" rx="42.03" transform="translate(120.42 -49.88) rotate(45)"></rect>
                                 <rect x="-32.54" y="78.39" width="305.92" height="84.05" rx="42.03" transform="translate(-49.88 120.42) rotate(-45)"></rect></svg
                             ><svg class="shape-2 d-none d-sm-block" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="50"></circle></svg>
@@ -80,7 +89,7 @@
                                         <!-- * * This can be a video, image, or just about anything else.-->
                                         <!-- * * Set the max width of your media to 100% and the height to-->
                                         <!-- * * 100% like the demo example below.-->
-                                        <video muted="muted" autoplay="" loop="" style="max-width: 100%; height: 100%"><source src="assets/img/demo-screen.mp4" type="video/mp4" /></video>
+                                        <video muted="muted" autoplay="" loop="" style="max-width: 100%; height: 100%"><source src="{{ asset('images/demo-screen.mp4') }}" type="video/mp4" /></video>
                                     </div>
                                 </div>
                             </div>
@@ -89,13 +98,14 @@
                 </div>
             </div>
         </header>
+
         <!-- Quote/testimonial aside-->
         <aside class="text-center bg-gradient-primary-to-secondary">
             <div class="container px-5">
                 <div class="row gx-5 justify-content-center">
                     <div class="col-xl-8">
                         <div class="h2 fs-1 text-white mb-4">"An intuitive solution to a common problem that we all face, wrapped up in a ecommerce web system"</div>
-                        <img src="assets/img/tnw-logo.svg" alt="..." style="height: 3rem" />
+                        <img src="{{ asset('images/tnw-logo.svg') }}" alt="..." style="height: 3rem" />
                     </div>
                 </div>
             </div>
@@ -166,7 +176,7 @@
                                         <!-- * * This can be a video, image, or just about anything else.-->
                                         <!-- * * Set the max width of your media to 100% and the height to-->
                                         <!-- * * 100% like the demo example below.-->
-                                        <video muted="muted" autoplay="" loop="" style="max-width: 100%; height: 100%"><source src="assets/img/demo-screen.mp4" type="video/mp4" /></video>
+                                        <video muted="muted" autoplay="" loop="" style="max-width: 100%; height: 100%"><source src="{{ asset('images/demo-screen.mp4') }}" type="video/mp4" /></video>
                                     </div>
                                 </div>
                             </div>
@@ -207,8 +217,8 @@
             <div class="container px-5">
                 <h2 class="text-center text-white font-alt mb-4">Get the app now!</h2>
                 <div class="d-flex flex-column flex-lg-row align-items-center justify-content-center">
-                    <a class="me-lg-3 mb-4 mb-lg-0" href="#!"><img class="app-badge" src="assets/img/google-play-badge.svg" alt="..." /></a>
-                    <a href="#!"><img class="app-badge" src="assets/img/app-store-badge.svg" alt="..." /></a>
+                    <a class="me-lg-3 mb-4 mb-lg-0" href="#!"><img class="app-badge" src="{{ asset('images/google-play-badge.svg') }}" alt="..." /></a>
+                    <a href="#!"><img class="app-badge" src="{{ asset('images/app-store-badge.svg') }}" alt="..." /></a>
                 </div>
             </div>
         </section>
