@@ -11160,3 +11160,114 @@ footer a:hover, footer a:active, footer a:focus {
     max-width: 17rem;
   }
 }
+
+.prod-container{
+  margin-bottom: 40px;
+  background-color: yellow;
+  color: purple;
+}
+.prod-h2{
+  margin-left: 20px;
+  margin-bottom: 20px;
+  color: purple;
+  display: inline-block;
+  transition: width 0.5s;
+}
+.prod-h2:hover {
+  border-bottom: 4px solid purple;
+}
+
+.col-property {
+  background-color: white;
+  transition: box-shadow 0.3s ease;
+  overflow: hidden;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--bs-gray-200);
+}
+.col-property h6{
+  margin-left: 20px;
+}
+.col-property img{
+  width: 100px;
+  height: 100px;
+}
+
+.column-link {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.col-property:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+
+/* Products page */
+.product-section{
+  margin-top: 100px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  /* background-color: #0dcaf0; */
+}
+.nav-button{
+  background-color: var(--bs-gray-100);
+  height: 60px;
+  width: 90%;
+  padding: 10px;
+}
+.btn-primary{
+  color: purple;
+  background-color: var(--bs-gray-300);
+  border: none;
+  margin-left: 20px;
+}
+.btn-primary:hover{
+  color: white;
+  background-color: purple;
+  border: none;
+}
+.products{
+  background-color: var(--bs-gray-100);
+  height: 100%;
+  margin-top: 20px;
+  width: 90%;
+  padding: 10px;
+}
+.row-props{
+  padding: 10px;
+}
+.prod-col{
+  background-color: white;
+  margin-right: 10px;
+  height: 350px;
+  width: 290px;
+  transition: border-color 0.3s, box-shadow 0.3s, color 0.3s;
+  overflow: hidden;
+  position: relative;
+}
+.prod-col:hover {
+  border-color: purple;
+  box-shadow: 0 0 5px rgba(128, 0, 128, 0.5);
+  color: purple;
+}
+.prod-col img {
+  width: 85%;
+  height: 70%;
+  margin: 2px auto;
+  display: block;
+}
+
+.prod-col p {
+  text-align: left;
+  margin-left: 5px;
+}

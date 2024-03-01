@@ -25,33 +25,7 @@
         <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
     </head>
     <body id="page-top">
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
-            <div class="container px-5">
-                <a class="navbar-brand fw-bold" href="#page-top"><img src="{{ asset('images/WhatsApp_Image_2024-02-28_at_15.48.15-removebg-preview.png') }}" height="90px" width="100px"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    Menu
-                    <i class="bi-list"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
-                        <li class="nav-item"><a class="nav-link me-lg-3" href="#home">Home</a></li>
-                        <li class="nav-item"><a class="nav-link me-lg-3" href="#products">Products</a></li>
-                        <li class="nav-item"><a class="nav-link me-lg-3" href="#categories">Categories</a></li>
-                        <li class="nav-item"><a class="nav-link me-lg-3" href="#blog">Blog</a></li>
-                        <li class="nav-item"><a class="nav-link me-lg-3" href="#features">Features</a></li>
-                        <li class="nav-item"><a class="nav-link me-lg-3" href="#about">About us</a></li>
-                    </ul>
-                    <button class="btn btn-primary rounded-pill px-3 mb-2 mb-lg-0" data-bs-toggle="modal" data-bs-target="#feedbackModal">
-                        <span class="d-flex align-items-center">
-                            <i class="bi-chat-text-fill me-2"></i>
-                            <span class="small">Send Feedback</span>
-                        </span>
-                    </button>
-                </div>
-            </div>
-        </nav>
-
+        @include('partials.header')
         <!-- Mashead header-->
         <header class="masthead">
             <div class="container px-5">
@@ -59,7 +33,7 @@
                     <div class="col-lg-6">
                         <!-- Mashead text and app badges-->
                         <div class="mb-5 mb-lg-0 text-center text-lg-start">
-                            <h1 class="display-1 lh-1 mb-3">Wakazi Ecommerce..</h1>
+                            <h1 class="display-1 lh-1 mb-3" style="color: purple;">Wakazi Ecommerce</h1>
                             <p class="lead fw-normal text-muted mb-5">Empowering creativity</p>
                             <div class="d-flex flex-column flex-lg-row align-items-center">
                                 <a class="me-lg-3 mb-4 mb-lg-0" href="#!"><img class="app-badge" src="{{ asset('images/google-play-badge.svg') }}" alt="..." /></a>
@@ -98,18 +72,6 @@
                 </div>
             </div>
         </header>
-
-        <!-- Quote/testimonial aside-->
-        <aside class="text-center bg-gradient-primary-to-secondary">
-            <div class="container px-5">
-                <div class="row gx-5 justify-content-center">
-                    <div class="col-xl-8">
-                        <div class="h2 fs-1 text-white mb-4">"An intuitive solution to a common problem that we all face, wrapped up in a ecommerce web system"</div>
-                        <img src="{{ asset('images/tnw-logo.svg') }}" alt="..." style="height: 3rem" />
-                    </div>
-                </div>
-            </div>
-        </aside>
         <!-- App features section-->
         <section id="features">
             <div class="container px-5">
@@ -185,6 +147,73 @@
                 </div>
             </div>
         </section>
+        <!-- Product categories -->
+        <h2 class="prod-h2"> Hot Categories</h2>
+        <div class="container text-center prod-container">
+            <div class="row row-property">
+                <div class="col col-property">
+                    <a href="#" class="column-link">
+                        <img class="app-badge" src="https://chairish-prod.freetls.fastly.net/image/product/master/191e2d8d-a2f6-45c8-8b80-cfa1f05af404/antique-italian-carved-walnut-renaissance-style-chair-3110" alt="..." />
+                        <h6>Category 1</h6>
+                    </a>
+                </div>
+                <div class="col col-property">
+                    <a href="#" class="column-link">
+                        <img class="app-badge" src="https://i.pinimg.com/originals/fb/4b/b6/fb4bb6c23ebff2f5a37ade9ff236a074.png" alt="..." />
+                        <h6>Category 2</h6>
+                    </a>
+                </div>
+                <div class="col col-property">
+                    <a href="#" class="column-link">
+                        <img class="app-badge" src="https://th.bing.com/th/id/OIP.-pJV-7WSxf1geYTgcJtSYAHaHa?w=768&h=768&rs=1&pid=ImgDetMain" alt="..." />
+                        <h6>Category 3</h6>
+                    </a>
+                </div>
+                <div class="col col-property">
+                    <a href="#" class="column-link">
+                        <img class="app-badge" src="https://i.pinimg.com/originals/cd/e1/cb/cde1cb46da212745cbec81af0935e99e.jpg" alt="..." />
+                        <h6>Category 4</h6>
+                    </a>
+                </div>
+            </div>
+            <div class="row row-property">
+                <div class="col col-property">
+                    <a href="#" class="column-link">
+                        <img class="app-badge" src="https://chairish-prod.freetls.fastly.net/image/product/master/191e2d8d-a2f6-45c8-8b80-cfa1f05af404/antique-italian-carved-walnut-renaissance-style-chair-3110" alt="..." />
+                        <h6>Category 5</h6>
+                    </a>
+                </div>
+                <div class="col col-property">
+                    <a href="#" class="column-link">
+                        <img class="app-badge" src="https://i.pinimg.com/originals/fb/4b/b6/fb4bb6c23ebff2f5a37ade9ff236a074.png" alt="..." />
+                        <h6>Category 6</h6>
+                    </a>
+                </div>
+                <div class="col col-property">
+                    <a href="#" class="column-link">
+                        <img class="app-badge" src="https://th.bing.com/th/id/OIP.-pJV-7WSxf1geYTgcJtSYAHaHa?w=768&h=768&rs=1&pid=ImgDetMain" alt="..." />
+                        <h6>Category 7</h6>
+                    </a>
+                </div>
+                <div class="col col-property">
+                    <a href="#" class="column-link">
+                        <img class="app-badge" src="https://i.pinimg.com/originals/cd/e1/cb/cde1cb46da212745cbec81af0935e99e.jpg" alt="..." />
+                        <h6>Category 8</h6>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- Quote/testimonial aside-->
+        <aside class="text-center bg-gradient-primary-to-secondary">
+            <div class="container px-5">
+                <div class="row gx-5 justify-content-center">
+                    <div class="col-xl-8">
+                        <div class="h2 fs-1 text-white mb-4">"An intuitive solution to a common problem that we all face, wrapped up in a ecommerce web system"</div>
+                        <img src="{{ asset('images/tnw-logo.svg') }}" alt="..." style="height: 3rem" />
+                    </div>
+                </div>
+            </div>
+        </aside>
         <!-- Basic features section-->
         <section class="bg-light">
             <div class="container px-5">
@@ -222,51 +251,7 @@
                 </div>
             </div>
         </section>
-        <!-- Footer-->
-        <footer class="bg-black text-center py-5">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <h3 style="text-align: left; color: purple;">Shopping Guide</h3>
-                    <a href="#"><p style="text-align: left;">How do I pay on wakazi?</p></a>
-                    <a href="#"><p style="text-align: left;">How long does my order arrive?</p></a>
-                    <a href="#"><p style="text-align: left;">How to shop on wakazi?</p></a>
-                    <a href="#"><p style="text-align: left;">Forgot password?</p></a>
-                </div>
-                <div class="col">
-                    <h3 style="text-align: left; color: purple;">Customer Help</h3>
-                    <a href="#"><p style="text-align: left;">Privacy Policy</p></a>
-                    <a href="#"><p style="text-align: left;">Terms and Conditions</p></a>
-                    <a href="#"><p style="text-align: left;">Account Settings</p></a>
-                    <a href="#"><p style="text-align: left;">Delivery and Shipping</p></a>
-                    <a href="#"><p style="text-align: left;">FAQ Center</p></a>
-                </div>
-                <div class="col">
-                    <h3 style="text-align: left; color: purple;">Business</h3>
-                    <a href="#"><p style="text-align: left;">Want to be a Seller?</p></a>
-                    <a href="#"><p style="text-align: left;">Seller Center</p></a>
-                    <a href="#"><p style="text-align: left;">Wakazi Shop</p></a>
-                </div>
-                <div class="col">
-                    <h3 style="text-align: left; color: purple;">Stay Connected</h3>
-                    <a href="#"><i class="fi fi-brands-facebook"></i></a>
-                    <a href="#"><p style="text-align: left;">How long does my order arrive?</p></a>
-                    <a href="#"><p style="text-align: left;">How to shop on wakazi?</p></a>
-                    <a href="#"><p style="text-align: left;">Forgot password?</p></a>
-                </div>
-            </div>
-            </div>
-            <div class="container px-5">
-                <div class="text-white-50 small">
-                    <div class="mb-2">&copy; Your Website 2024. All Rights Reserved.</div>
-                    <a href="#!">Privacy</a>
-                    <span class="mx-1">&middot;</span>
-                    <a href="#!">Terms</a>
-                    <span class="mx-1">&middot;</span>
-                    <a href="#!">FAQ</a>
-                </div>
-            </div>
-        </footer>
+        @include('partials.footer')
         <!-- Feedback Modal-->
         <div class="modal fade" id="feedbackModal" tabindex="-1" aria-labelledby="feedbackModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
