@@ -11208,6 +11208,26 @@ footer a:hover, footer a:active, footer a:focus {
   cursor: pointer;
 }
 
+/* Header/Navbar links */
+.btn-light{
+  background-color: #fff;
+  border: none;
+  outline: none;
+  margin-left: 5px;
+  color: purple;
+  border-radius: 0;
+  text-decoration: none;
+  transition: background-color 1.2s ease-in-out, color 1.2s ease-in-out;
+}
+.btn-light:hover{
+  background-color: purple;
+  color:white;
+}
+.dropdown-menu{
+  color: purple;
+  border: none;
+}
+
 
 /* Products page */
 .product-section{

@@ -9,12 +9,40 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
-                        <li class="nav-item"><a class="nav-link me-lg-3" href="/home" style="color: purple;">Home</a></li>
-                        <li class="nav-item"><a class="nav-link me-lg-3" href="/products" style="color: purple;">Products</a></li>
-                        <li class="nav-item"><a class="nav-link me-lg-3" href="#categories" style="color: purple;">Categories</a></li>
-                        <li class="nav-item"><a class="nav-link me-lg-3" href="#blog" style="color: purple;">Blog</a></li>
-                        <li class="nav-item"><a class="nav-link me-lg-3" href="#features" style="color: purple;">Features</a></li>
-                        <li class="nav-item"><a class="nav-link me-lg-3" href="#about" style="color: purple;">About us</a></li>
+                        <a href="#home"><button type="button" class="btn btn-light">Home</button></a>
+                        <a href="#home"><button type="button" class="btn btn-light">Products</button></a>
+                        <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                            <ul class="navbar-nav">
+                                <li class="nav-item dropdown">
+                                <button class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Collections
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-light">
+                                    <li><a class="dropdown-item" href="#">Baby</a></li>
+                                    <li><a class="dropdown-item" href="#">Gifts</a></li>
+                                    <li><a class="dropdown-item" href="#">Shoes</a></li>
+                                    <li><a class="dropdown-item" href="#">Clothing</a></li>
+                                    <li><a class="dropdown-item" href="#">Jewellery</a></li>
+                                    <li><a class="dropdown-item" href="#">Weddings</a></li>
+                                    <li><a class="dropdown-item" href="#">Accesories</a></li>
+                                    <li><a class="dropdown-item" href="#">Electronics</a></li>
+                                    <li><a class="dropdown-item" href="#">Pet Supplies</a></li>
+                                    <li><a class="dropdown-item" href="#">Home & Decor</a></li>
+                                    <li><a class="dropdown-item" href="#">Toys & Games</a></li>
+                                    <li><a class="dropdown-item" href="#">Bags & Purses</a></li>
+                                    <li><a class="dropdown-item" href="#">Bath & Beauty</a></li>
+                                    <li><a class="dropdown-item" href="#">Art & Collectibles</a></li>
+                                    <li><a class="dropdown-item" href="#">Bookd, Movies & Music</a></li>
+                                    <li><a class="dropdown-item" href="#">Paper & Party Supplies</a></li>
+                                    <li><a class="dropdown-item" href="#">Craft Supplies & Tools</a></li>
+                                </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="#home"><button type="button" class="btn btn-light">Blog</button></a>
+                        <a href="#home"><button type="button" class="btn btn-light">Features</button></a>
+                        <a href="#home"><button type="button" class="btn btn-light">About Us</button></a>
+                        <!-- <li class="nav-item"><a class="nav-link me-lg-3" href="#about">About us</a></li> -->
                     </ul>
                     <button class="btn btn-primary rounded-pill px-3 mb-2 mb-lg-0" data-bs-toggle="modal" data-bs-target="#feedbackModal">
                         <span class="d-flex align-items-center">
