@@ -44,16 +44,32 @@
                         <a href="#home"><button type="button" class="btn btn-light">About Us</button></a>
                         <!-- <li class="nav-item"><a class="nav-link me-lg-3" href="#about">About us</a></li> -->
                     </ul>
-                    <button class="btn btn-primary rounded-pill px-3 mb-2 mb-lg-0" data-bs-toggle="modal" data-bs-target="#feedbackModal">
+                    <!-- <button class="btn btn-primary rounded-pill px-3 mb-2 mb-lg-0" data-bs-toggle="modal" data-bs-target="#feedbackModal">
                         <span class="d-flex align-items-center">
                             <i class="bi-chat-text-fill me-2"></i>
                             <span class="small">Send Feedback</span>
                         </span>
-                    </button>
-                    <div>
-                        <i class="bi bi-search"></i>
-                        <i class="bi bi-person"></i>
-                        <i class="bi bi-bag"></i>
+                    </button> -->
+                    <div class="header-icons d-flex align-items-center">
+                        <!-- <i class="bi bi-search me-3"></i> -->
+                        <div class="dropdown">
+                            <i class="bi bi-person me-1"></i>
+                            <button class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                Account
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <button>Login</button>
+                            </ul>
+                        </div>
+                        <div class="dropdown">
+                            <i class="bi bi-bag ms-3"></i>
+                            <button class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                Cart
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <button>View cart</button>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>

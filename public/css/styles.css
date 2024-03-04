@@ -11227,6 +11227,31 @@ footer a:hover, footer a:active, footer a:focus {
   color: purple;
   border: none;
 }
+.header-icons{
+  padding-left: 30px;
+}
+.header-icons i,button:hover{
+  color: purple;
+}
+.dropdown-menu {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  box-shadow: #343a40;
+  border: 1px solid purple;
+  outline: none;
+  justify-content: center;
+  text-align: center;
+}
+.dropdown:hover .dropdown-menu{
+  display: block;
+  opacity: 1;
+}
+.dropdown button{
+  background-color: white;
+  border: none;
+  outline: none;
+}
 
 /* Carousel section */
 .carousel-caption {
@@ -11265,7 +11290,6 @@ footer a:hover, footer a:active, footer a:focus {
   display: flex;
   flex-direction: column;
   height: 100%;
-  /* background-color: #0dcaf0; */
 }
 .nav-button{
   background-color: var(--bs-gray-100);
@@ -11315,7 +11339,6 @@ footer a:hover, footer a:active, footer a:focus {
   margin: 2px auto;
   display: block;
 }
-
 .prod-col p {
   text-align: left;
   margin-left: 5px;
