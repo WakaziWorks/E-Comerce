@@ -26,12 +26,53 @@
     </head>
     <body id="page-top">
         @include('partials.header')
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" style="margin-top: 120px;">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="6000">
+                    <video src="{{ asset('images/vid2.mp4') }}" class="d-block h-20 w-100" autoplay muted loop></video>
+                    <div class="carousel-caption">
+                        <p>Some representative placeholder content for the various slides.</p>
+                        <button>EXPLORE</button>
+                        <button>LEARN MORE</button>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="6000">
+                    <video src="{{ asset('images/vid1.mp4') }}" class="d-block h-20 w-100" autoplay muted loop></video>
+                    <div class="carousel-caption">
+                        <p>Some representative placeholder content for the first slide.</p>
+                        <button>SHOP</button>
+                        <button>EXPLORE</button>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="6000">
+                    <video src="{{ asset('images/vid3.mp4') }}" class="d-block h-20 w-100" autoplay muted loop></video>
+                    <div class="carousel-caption">
+                        <p>Some representative placeholder content for the first slide.</p>
+                        <button>SHOP</button>
+                        <button>EXPLORE</button>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
         <!-- Mashead header-->
-        <header class="masthead">
+        <!-- <header class="masthead">
             <div class="container px-5">
                 <div class="row gx-5 align-items-center">
                     <div class="col-lg-6">
-                        <!-- Mashead text and app badges-->
+                        
                         <div class="mb-5 mb-lg-0 text-center text-lg-start">
                             <h1 class="display-1 lh-1 mb-3" style="color: purple;">Wakazi Ecommerce</h1>
                             <p class="lead fw-normal text-muted mb-5">Empowering creativity</p>
@@ -42,7 +83,7 @@
                         </div>
                     </div>
                     <div class="col-lg-6">
-                        <!-- Masthead device mockup feature-->
+                        
                         <div class="masthead-device-mockup">
                             <svg class="circle" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
                                 <defs>
@@ -59,10 +100,7 @@
                             <div class="device-wrapper">
                                 <div class="device" data-device="iPhoneX" data-orientation="portrait" data-color="black">
                                     <div class="screen bg-black">
-                                        <!-- PUT CONTENTS HERE:-->
-                                        <!-- * * This can be a video, image, or just about anything else.-->
-                                        <!-- * * Set the max width of your media to 100% and the height to-->
-                                        <!-- * * 100% like the demo example below.-->
+                                        
                                         <video muted="muted" autoplay="" loop="" style="max-width: 100%; height: 100%"><source src="{{ asset('images/demo-screen.mp4') }}" type="video/mp4" /></video>
                                     </div>
                                 </div>
@@ -71,7 +109,7 @@
                     </div>
                 </div>
             </div>
-        </header>
+        </header> -->
         <!-- App features section-->
         <section id="features">
             <div class="container px-5">

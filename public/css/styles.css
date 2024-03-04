@@ -11228,6 +11228,34 @@ footer a:hover, footer a:active, footer a:focus {
   border: none;
 }
 
+/* Carousel section */
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.carousel-caption p{
+  font-weight: 700;
+  font-size: xx-large;
+}
+.carousel-caption button{
+  border: none;
+  outline: none;
+  background-color: purple;
+  color: white;
+  padding: 10px 15px;
+  width: 160px;
+  font-weight: 700;
+  margin-left: 20px;
+  transition: background-color 1.2s ease-in-out, color 1.2s ease-in-out;
+}
+.carousel-caption button:hover{
+  background-color: white;
+  border: 1px solid purple;
+  color: purple;
+}
 
 /* Products page */
 .product-section{

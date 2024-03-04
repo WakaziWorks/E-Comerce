@@ -50,6 +50,11 @@
                             <span class="small">Send Feedback</span>
                         </span>
                     </button>
+                    <div>
+                        <i class="bi bi-search"></i>
+                        <i class="bi bi-person"></i>
+                        <i class="bi bi-bag"></i>
+                    </div>
                 </div>
             </div>
         </nav>
