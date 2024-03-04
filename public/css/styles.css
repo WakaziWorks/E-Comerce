@@ -11263,7 +11263,7 @@ footer a:hover, footer a:active, footer a:focus {
 }
 .carousel-caption p{
   font-weight: 700;
-  font-size: xx-large;
+  /* font-size: x-large; */
 }
 .carousel-caption button{
   border: none;
@@ -11282,64 +11282,52 @@ footer a:hover, footer a:active, footer a:focus {
   color: purple;
 }
 
-/* Products page */
-.product-section{
-  margin-top: 100px;
-  justify-content: center;
-  align-items: center;
+/* Collections */
+.collection-container{
+  width: 100%;
+  height: 100%;
+  color: var(--bs-purple);
   display: flex;
   flex-direction: column;
-  height: 100%;
+  justify-content: start;
+  background: rgb(245,236,250);
+  background: radial-gradient(circle, rgba(245,236,250,1) 0%, rgba(206,152,244,1) 100%);
 }
-.nav-button{
-  background-color: var(--bs-gray-100);
-  height: 60px;
-  width: 90%;
-  padding: 10px;
-}
-.btn-primary{
-  color: purple;
-  background-color: var(--bs-gray-300);
-  border: none;
-  margin-left: 20px;
-}
-.btn-primary:hover{
-  color: white;
-  background-color: purple;
-  border: none;
-}
-.products{
-  background-color: var(--bs-gray-100);
-  height: 100%;
-  margin-top: 20px;
-  width: 90%;
-  padding: 10px;
-}
-.row-props{
-  padding: 10px;
-}
-.prod-col{
-  background-color: white;
-  margin-right: 10px;
-  height: 350px;
-  width: 290px;
-  transition: border-color 0.3s, box-shadow 0.3s, color 0.3s;
-  overflow: hidden;
-  position: relative;
-}
-.prod-col:hover {
-  border-color: purple;
-  box-shadow: 0 0 5px rgba(128, 0, 128, 0.5);
-  color: purple;
-  cursor: pointer;
-}
-.prod-col img {
-  width: 85%;
-  height: 70%;
-  margin: 2px auto;
-  display: block;
-}
-.prod-col p {
+.collection-container h3{
+  color: black;
+  margin-left: 40px;
   text-align: left;
-  margin-left: 5px;
+  margin-top: 20px;
+}
+.row{
+  margin: 15px 15px;
+}
+.collection-col{
+  background-color: white;
+  margin-bottom: 20px;
+  width: 100%;
+  height: 400px;
+  cursor: pointer;
+  /* width: 90%; */
+}
+.collection-col h4{
+  margin: 20px 20px;
+  color: black;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.collection-col h4:hover{
+  color: purple;
+}
+.collection-col img{
+  width: 100%;
+  margin: 20px;
+}
+.collection-col a,p{
+  margin: 20px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: black;
+  text-decoration: none;
+}
+.col a,p:hover{
+  color: purple;
 }

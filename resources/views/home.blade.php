@@ -110,59 +110,52 @@
                 </div>
             </div>
         </header> -->
-        <!-- Product categories -->
-        <h2 class="prod-h2">COLLECTIONS</h2>
-        <div class="container text-center prod-container">
-            <div class="row row-property">
-                <div class="col col-property">
-                    <a href="#" class="column-link">
-                        <img class="app-badge" src="https://chairish-prod.freetls.fastly.net/image/product/master/191e2d8d-a2f6-45c8-8b80-cfa1f05af404/antique-italian-carved-walnut-renaissance-style-chair-3110" alt="..." />
-                        <h6>Category 1</h6>
-                    </a>
+
+        <!-- Collections -->
+        <div class="collection-container">
+        <h3>Collections</h3>
+            <div class="row">
+                <div class="collection-col col-12 col-md mx-3">
+                    <h4> Jewellery</h4>
+                    <img src="{{ asset('images/potrait_black.png') }}" alt="..." />
+                    <a><p>Some link here...</p></a>
                 </div>
-                <div class="col col-property">
-                    <a href="#" class="column-link">
-                        <img class="app-badge" src="https://i.pinimg.com/originals/fb/4b/b6/fb4bb6c23ebff2f5a37ade9ff236a074.png" alt="..." />
-                        <h6>Category 2</h6>
-                    </a>
+                <div class="collection-col col-12 col-md mx-3">
+                    <h4> Home and Decor</h4>
+                    <img src="{{ asset('images/potrait_black.png') }}" alt="..." />
+                    <a><p>Some link here...</p></a>
                 </div>
-                <div class="col col-property">
-                    <a href="#" class="column-link">
-                        <img class="app-badge" src="https://th.bing.com/th/id/OIP.-pJV-7WSxf1geYTgcJtSYAHaHa?w=768&h=768&rs=1&pid=ImgDetMain" alt="..." />
-                        <h6>Category 3</h6>
-                    </a>
+                <div class="collection-col col-12 col-md mx-3">
+                    <h4> Bags and Purses</h4>
+                    <img src="{{ asset('images/potrait_black.png') }}" alt="..." />
+                    <a><p>Some link here...</p></a>
                 </div>
-                <div class="col col-property">
-                    <a href="#" class="column-link">
-                        <img class="app-badge" src="https://i.pinimg.com/originals/cd/e1/cb/cde1cb46da212745cbec81af0935e99e.jpg" alt="..." />
-                        <h6>Category 4</h6>
-                    </a>
+                <div class="collection-col col-12 col-md mx-3">
+                    <h4> Art and Collectibles</h4>
+                    <img src="{{ asset('images/potrait_black.png') }}" alt="..." />
+                    <a><p>Some link here...</p></a>
                 </div>
             </div>
-            <div class="row row-property">
-                <div class="col col-property">
-                    <a href="#" class="column-link">
-                        <img class="app-badge" src="https://chairish-prod.freetls.fastly.net/image/product/master/191e2d8d-a2f6-45c8-8b80-cfa1f05af404/antique-italian-carved-walnut-renaissance-style-chair-3110" alt="..." />
-                        <h6>Category 5</h6>
-                    </a>
+            <div class="row">
+                <div class="collection-col col-12 col-md mx-3">
+                    <h4> Books, Movies and Music</h4>
+                    <img src="{{ asset('images/potrait_black.png') }}" alt="..." />
+                    <a><p>Some link here...</p></a>
                 </div>
-                <div class="col col-property">
-                    <a href="#" class="column-link">
-                        <img class="app-badge" src="https://i.pinimg.com/originals/fb/4b/b6/fb4bb6c23ebff2f5a37ade9ff236a074.png" alt="..." />
-                        <h6>Category 6</h6>
-                    </a>
+                <div class="collection-col col-12 col-md mx-3">
+                    <h4> Electronics</h4>
+                    <img src="{{ asset('images/potrait_black.png') }}" alt="..." />
+                    <a><p>Some link here...</p></a>
                 </div>
-                <div class="col col-property">
-                    <a href="#" class="column-link">
-                        <img class="app-badge" src="https://th.bing.com/th/id/OIP.-pJV-7WSxf1geYTgcJtSYAHaHa?w=768&h=768&rs=1&pid=ImgDetMain" alt="..." />
-                        <h6>Category 7</h6>
-                    </a>
+                <div class="collection-col col-12 col-md mx-3">
+                    <h4> Accesories</h4>
+                    <img src="{{ asset('images/potrait_black.png') }}" alt="..." />
+                    <a><p>Some link here...</p></a>
                 </div>
-                <div class="col col-property">
-                    <a href="#" class="column-link">
-                        <img class="app-badge" src="https://i.pinimg.com/originals/cd/e1/cb/cde1cb46da212745cbec81af0935e99e.jpg" alt="..." />
-                        <h6>Category 8</h6>
-                    </a>
+                <div class="collection-col col-12 col-md mx-3">
+                    <h4> Craft supplies and Tools</h4>
+                    <img src="{{ asset('images/potrait_black.png') }}" alt="..." />
+                    <a><p>Some link here...</p></a>
                 </div>
             </div>
         </div>
