@@ -57,7 +57,7 @@
                             <button class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                                 Account
                             </button>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <ul class="dropdown-menu dropdonwmenu-btn" aria-labelledby="dropdownMenuButton">
                                 <button>Login</button>
                             </ul>
                         </div>
@@ -66,7 +66,7 @@
                             <button class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                                 Cart
                             </button>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <ul class="dropdown-menu dropdonwmenu-btn" aria-labelledby="dropdownMenuButton">
                                 <button>View cart</button>
                             </ul>
                         </div>
