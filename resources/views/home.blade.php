@@ -113,49 +113,49 @@
 
         <!-- Collections -->
         <div class="collection-container">
-        <h3>Collections</h3>
+            <h1>Collections</h1>
             <div class="row">
                 <div class="collection-col col-12 col-md mx-3">
                     <h4> Jewellery</h4>
-                    <img src="{{ asset('images/potrait_black.png') }}" alt="..." />
-                    <a><p>Some link here...</p></a>
+                    <img src="{{ asset('images/jewellery.webp') }}" alt="..." />
+                    <a><p>See more...</p></a>
                 </div>
                 <div class="collection-col col-12 col-md mx-3">
                     <h4> Home and Decor</h4>
-                    <img src="{{ asset('images/potrait_black.png') }}" alt="..." />
-                    <a><p>Some link here...</p></a>
+                    <img src="{{ asset('images/decor.jpg') }}" alt="..." />
+                    <a><p>See more curated Decors...</p></a>
                 </div>
                 <div class="collection-col col-12 col-md mx-3">
                     <h4> Bags and Purses</h4>
-                    <img src="{{ asset('images/potrait_black.png') }}" alt="..." />
-                    <a><p>Some link here...</p></a>
+                    <img src="{{ asset('images/bag.webp') }}" alt="..." />
+                    <a><p>Shop Bags and Purses...</p></a>
                 </div>
                 <div class="collection-col col-12 col-md mx-3">
                     <h4> Art and Collectibles</h4>
-                    <img src="{{ asset('images/potrait_black.png') }}" alt="..." />
-                    <a><p>Some link here...</p></a>
+                    <img src="{{ asset('images/art.avif') }}" alt="..." />
+                    <a><p>Shop Now...</p></a>
                 </div>
             </div>
             <div class="row">
                 <div class="collection-col col-12 col-md mx-3">
                     <h4> Books, Movies and Music</h4>
-                    <img src="{{ asset('images/potrait_black.png') }}" alt="..." />
-                    <a><p>Some link here...</p></a>
+                    <img src="{{ asset('images/books.jpg') }}" alt="..." />
+                    <a><p>Shop Books, Movies and Music...</p></a>
                 </div>
                 <div class="collection-col col-12 col-md mx-3">
                     <h4> Electronics</h4>
-                    <img src="{{ asset('images/potrait_black.png') }}" alt="..." />
-                    <a><p>Some link here...</p></a>
+                    <img src="{{ asset('images/electronics.jpg') }}" alt="..." />
+                    <a><p>See more from Wakazi Electronics...</p></a>
                 </div>
                 <div class="collection-col col-12 col-md mx-3">
                     <h4> Accesories</h4>
-                    <img src="{{ asset('images/potrait_black.png') }}" alt="..." />
-                    <a><p>Some link here...</p></a>
+                    <img src="{{ asset('images/accesories.jpg') }}" alt="..." />
+                    <a><p>Shop Accesories...</p></a>
                 </div>
                 <div class="collection-col col-12 col-md mx-3">
                     <h4> Craft supplies and Tools</h4>
-                    <img src="{{ asset('images/potrait_black.png') }}" alt="..." />
-                    <a><p>Some link here...</p></a>
+                    <img src="{{ asset('images/craft.jpg') }}" alt="..." />
+                    <a><p>See more African Crafts and Tools...</p></a>
                 </div>
             </div>
         </div>
