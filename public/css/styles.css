@@ -11261,8 +11261,8 @@ footer a:hover, footer a:active, footer a:focus {
 
 /* Footer section */
 .col i{
-  margin-left: 20px;
-  color: purple;
+  margin-left: 15px;
+  color: white;
 }
 
 /* Carousel section */
@@ -11380,7 +11380,7 @@ footer a:hover, footer a:active, footer a:focus {
 }
 .cart-contents p{
   margin-top: 2rem;
-  font-size: medium;
+  /* font-size: medium; */
   text-align: center;
   color: purple;
 }
