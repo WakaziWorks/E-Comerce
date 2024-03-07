@@ -27,8 +27,6 @@
     <body>
         @extends('partials.header')
         <section style="margin-top: 120px;">
-            <h1>Products will go here...</h1>
-        </section>
         @extends('partials.footer')
     </body>
 </html>
