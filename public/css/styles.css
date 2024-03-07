@@ -11163,7 +11163,7 @@ footer a:hover, footer a:active, footer a:focus {
     max-width: 17rem;
   }
 }
-.prod-container{
+/* .prod-container{
   margin-bottom: 40px;
   background-color: yellow;
   color: purple;
@@ -11177,7 +11177,7 @@ footer a:hover, footer a:active, footer a:focus {
 }
 .prod-h2:hover {
   border-bottom: 4px solid purple;
-}
+} */
 .col-property {
   background-color: #FFE5E5;
   transition: box-shadow 0.3s ease;
@@ -11259,6 +11259,12 @@ footer a:hover, footer a:active, footer a:focus {
   outline: none;
 }
 
+/* Footer section */
+.col i{
+  margin-left: 20px;
+  color: purple;
+}
+
 /* Carousel section */
 #carouselExampleCaptions{
   width: 100%;
@@ -11320,7 +11326,6 @@ footer a:hover, footer a:active, footer a:focus {
   width: 100%;
   height: 400px;
   cursor: pointer;
-  /* width: 90%; */
 }
 .collection-col h4{
   margin: 10px 10px;
@@ -11370,12 +11375,15 @@ footer a:hover, footer a:active, footer a:focus {
 .cart-contents h1{
   color: purple;
 }
-.cart-contents a,p{
+.cart-contents a{
+  color: purple;
+}
+.cart-contents p{
   margin-top: 2rem;
   font-size: medium;
   text-align: center;
   color: purple;
 }
-.cart-contents a,p:hover{
+.cart-contents p:hover{
   font-weight: normal;
 }
