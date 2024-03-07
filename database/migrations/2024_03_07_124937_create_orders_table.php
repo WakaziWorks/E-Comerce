@@ -9,13 +9,27 @@ return new class extends Migration
     /**
      * Run the migrations.
      */
-    public function up(): void
-    {
-        Schema::create('orders', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
-        });
-    }
+    public function up()
+{
+    Schema::create('orders', function (Blueprint $table) {
+        $table->id('OrderID');
+        $table->foreignId('CustomerID')->constrained()->onDelete('cascade');
+        $table->foreignId('EmployeeID')->constrained()->onDelete('cascade');
+        $table->dateTime('OrderDate');
+        $table->dateTime('RequiredDate');
+        $table->dateTime('ShippedDate')->nullable(); // Assuming ShippedDate can be null if the order hasn't shipped yet
+        $table->string('ShipVia')->nullable(); // Assuming this can be nullable
+        $table->decimal('Freight', 8, 2)->default(0); // Assuming a default freight cost
+        $table->string('DriverName')->nullable(); // Assuming the driver name can be nullable
+        $table->text('LocationAddress');
+        $table->string('City');
+        $table->string('County');
+        $table->string('DeliveryCode');
+        $table->text('AdditionalNotes')->nullable(); // Assuming additional notes can be nullable
+        $table->timestamps(); // Adds created_at and updated_at columns
+    });
+}
+
 
     /**
      * Reverse the migrations.
