@@ -11233,11 +11233,6 @@ footer a:hover, footer a:active, footer a:focus {
   color: purple;
 }
 .dropdown-menu {
-  /* display: none;
-  opacity: 0;
-  transition: opacity 0.3s ease; */
-  /* box-shadow: #343a40; */
-  /* border: 1px solid purple; */
   outline: none;
   border: none;
   background-color: aliceblue;
@@ -11267,7 +11262,6 @@ footer a:hover, footer a:active, footer a:focus {
 /* Carousel section */
 #carouselExampleCaptions{
   width: 100%;
-  /* margin-left: 20px; */
 }
 .carousel-caption {
   position: absolute;
@@ -11350,4 +11344,38 @@ footer a:hover, footer a:active, footer a:focus {
 }
 .col a,p:hover{
   font-weight: bold;
+}
+
+/* Cart page styling */
+.cart-page{
+  margin-top: 12rem;
+  margin-bottom: 8rem;
+}
+.cart-contents{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  /* padding: 5px; */
+}
+.cart-contents button{
+  background-color: purple;
+  border: none;
+  outline: none;
+  padding: 10px;
+  color: white;
+  width: 15rem;
+}
+.cart-contents h1{
+  color: purple;
+}
+.cart-contents a,p{
+  margin-top: 2rem;
+  font-size: medium;
+  text-align: center;
+  color: purple;
+}
+.cart-contents a,p:hover{
+  font-weight: normal;
 }

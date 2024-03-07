@@ -27,7 +27,7 @@
     <body>
         @extends('partials.header')
         <section class="product-section">
-            <div class="nav-button">
+            <!-- <div class="nav-button">
                 <div class="btn-group">
                     <button type="button" class="btn btn-primary">Popular</button>
                 </div>
@@ -47,8 +47,8 @@
                         <li><a class="dropdown-item" href="#">High to Low</a></li>
                     </ul>
                 </div>
-            </div>
-            <div class="products">
+            </div> -->
+            <!-- <div class="products">
                 <div class="container text-center">
                     <div class="row row-props">
                         <div class="prod-col">
@@ -127,7 +127,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </section>
         @extends('partials.footer')
     </body>

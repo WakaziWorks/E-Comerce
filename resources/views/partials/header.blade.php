@@ -67,7 +67,7 @@
                                 Cart
                             </button>
                             <ul class="dropdown-menu dropdonwmenu-btn" aria-labelledby="dropdownMenuButton">
-                                <button>View cart</button>
+                                <a href="#"><button>View cart</button></a>
                             </ul>
                         </div>
                     </div>

@@ -33,7 +33,9 @@ Route::get('/home', function () {
 Route::get('/products', function () {
     return view('products');
 });
-
+Route::get('/cart', function() {
+    return view('cart');
+});
 
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
