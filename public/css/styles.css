@@ -11163,21 +11163,6 @@ footer a:hover, footer a:active, footer a:focus {
     max-width: 17rem;
   }
 }
-/* .prod-container{
-  margin-bottom: 40px;
-  background-color: yellow;
-  color: purple;
-}
-.prod-h2{
-  margin-left: 20px;
-  margin-bottom: 20px;
-  color: purple;
-  display: inline-block;
-  transition: width 0.5s;
-}
-.prod-h2:hover {
-  border-bottom: 4px solid purple;
-} */
 .col-property {
   background-color: #FFE5E5;
   transition: box-shadow 0.3s ease;
