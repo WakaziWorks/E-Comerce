@@ -1,17 +1,17 @@
 <header>
      <!-- Navigation-->
      <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
-            <div class="container px-5">
-                <a class="navbar-brand fw-bold" href="#page-top"><img src="{{ asset('images/WhatsApp_Image_2024-02-28_at_15.48.15-removebg-preview.png') }}" height="90px" width="100px"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    Menu
-                    <i class="bi-list"></i>
-                </button>
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="#page-top"><img src="{{ asset('images/WhatsApp_Image_2024-02-28_at_15.48.15-removebg-preview.png') }}" height="90px" width="110px"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                        Menu
+                        <i class="bi-list"></i>
+                    </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
+                    <div class="navbar-nav me-4 my-3 my-lg-0">
                         <a href="#home"><button type="button" class="btn btn-light">Home</button></a>
                         <a href="#home"><button type="button" class="btn btn-light">Products</button></a>
-                        <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                        <!-- <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
                             <ul class="navbar-nav">
                                 <li class="nav-item dropdown">
                                 <button class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
@@ -38,37 +38,21 @@
                                 </ul>
                                 </li>
                             </ul>
-                        </div>
+                        </div> -->
+                        <a href="#home"><button type="button" class="btn btn-light">Collections</button></a>
                         <a href="#home"><button type="button" class="btn btn-light">Blog</button></a>
                         <a href="#home"><button type="button" class="btn btn-light">Features</button></a>
-                        <a href="#home"><button type="button" class="btn btn-light">About Us</button></a>
-                        <!-- <li class="nav-item"><a class="nav-link me-lg-3" href="#about">About us</a></li> -->
-                    </ul>
-                    <!-- <button class="btn btn-primary rounded-pill px-3 mb-2 mb-lg-0" data-bs-toggle="modal" data-bs-target="#feedbackModal">
-                        <span class="d-flex align-items-center">
-                            <i class="bi-chat-text-fill me-2"></i>
-                            <span class="small">Send Feedback</span>
-                        </span>
-                    </button> -->
-                    <div class="header-icons d-flex align-items-center">
-                        <!-- <i class="bi bi-search me-3"></i> -->
-                        <div class="dropdown">
-                            <i class="bi bi-person me-1"></i>
-                            <button class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                                Account
-                            </button>
-                            <ul class="dropdown-menu dropdonwmenu-btn" aria-labelledby="dropdownMenuButton">
-                                <button>Login</button>
-                            </ul>
-                        </div>
-                        <div class="dropdown">
-                            <i class="bi bi-bag ms-3"></i>
-                            <button class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                                Cart
-                            </button>
-                            <ul class="dropdown-menu dropdonwmenu-btn" aria-labelledby="dropdownMenuButton">
-                                <a href="#"><button>View cart</button></a>
-                            </ul>
+                    </div>
+                    <div class="header-icons d-flex flex-column flex-lg-row ms-auto">
+                        <form class="d-flex" role="search">
+                            <div class="input-group">
+                                <input class="form-control" type="search" placeholder="Search..." aria-label="Search">
+                                <button class="btn btn-outline-success" type="submit"><i class="bi bi-search"></i></button>
+                            </div>
+                        </form>
+                        <div class="cart-login d-flex flex-column flex-lg-row">
+                            <a href="" style="margin-right: 20px;"><img src="{{ asset('images/cart4.svg') }}" /></a>
+                            <a href=""><img src="{{ asset('images/person-check.svg') }}" /></a>
                         </div>
                     </div>
                 </div>

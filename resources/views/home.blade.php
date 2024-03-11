@@ -36,7 +36,7 @@
                 <div class="carousel-item active" data-bs-interval="6000">
                     <video src="{{ asset('images/vid2.mp4') }}" class="d-block h-20 w-100" autoplay muted loop></video>
                     <div class="carousel-caption">
-                        <p>Some representative placeholder content for the various slides.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                         <button>EXPLORE</button>
                         <button>LEARN MORE</button>
                     </div>
@@ -44,7 +44,7 @@
                 <div class="carousel-item" data-bs-interval="6000">
                     <video src="{{ asset('images/vid1.mp4') }}" class="d-block h-20 w-100" autoplay muted loop></video>
                     <div class="carousel-caption">
-                        <p>Some representative placeholder content for the first slide.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                         <button>SHOP</button>
                         <button>EXPLORE</button>
                     </div>
@@ -52,7 +52,7 @@
                 <div class="carousel-item" data-bs-interval="6000">
                     <video src="{{ asset('images/vid3.mp4') }}" class="d-block h-20 w-100" autoplay muted loop></video>
                     <div class="carousel-caption">
-                        <p>Some representative placeholder content for the first slide.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                         <button>SHOP</button>
                         <button>EXPLORE</button>
                     </div>
