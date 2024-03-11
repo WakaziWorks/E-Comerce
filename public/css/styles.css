@@ -10863,7 +10863,7 @@ section {
   /* padding-top: 1rem;
   padding-bottom: 1rem; */
   /* background-color: #FFE5E5; */
-  background: radial-gradient(circle, rgba(245,236,250,1) 0%, rgba(206,152,244,1) 100%);
+  background: #FFE6E6;
   /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); */
 }
 #mainNav .navbar-brand {
@@ -11245,14 +11245,47 @@ footer a:hover, footer a:active, footer a:focus {
 }
 
 /* Footer section */
+.main-footer{
+  padding-top: 60px;
+  margin-bottom: 60px;
+  background-color: #AD88C6;
+}
 .col i{
   margin-left: 15px;
   color: white;
 }
+.col{
+  font-size: large;
+}
+.col img{
+  margin-bottom: 15px;
+}
+.col h5{
+  color: #7469B6;
+}
+.col p{
+  color: white;
+}
+#download{
+  background-color: #FFE6E6;
+}
+#footer-1{
+  background-color: #E1AFD1;
+}
+.bottom-footer{
+  color: #800080;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.bottom-footer a{
+  color: #800080;
+}
 
 /* Carousel section */
 #carouselExampleCaptions{
-  width: 100%;
+  width: 98%;
+  margin-top: 110px;
+  margin-left: 20px;
 }
 .carousel-caption {
   position: absolute;
@@ -11286,7 +11319,7 @@ footer a:hover, footer a:active, footer a:focus {
 .collection-container{
   width: 98%;
   height: 100%;
-  margin-top: 20px;
+  margin-top: 30px;
   margin-left: 20px;
   color: var(--bs-purple);
   display: flex;
@@ -11322,18 +11355,7 @@ footer a:hover, footer a:active, footer a:focus {
 }
 .collection-col img{
   width: 100%;
-  height: 78%;
-}
-.collection-col a,p{
-  margin-top: 5px;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  color: purple;
-  text-decoration: none;
-  font-size: 13px;
-  transition: font-size 0.7s ease-in-out;
-}
-.col a,p:hover{
-  font-weight: bold;
+  height: 83%;
 }
 
 /* Cart page styling */
