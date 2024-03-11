@@ -26,13 +26,13 @@
     </head>
     <body id="page-top">
         @include('partials.header')
-        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" style="margin-top: 120px;">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
-            <div class="carousel-inner">
+            <div class="carousel-inner ratio ratio-21x9">
                 <div class="carousel-item active" data-bs-interval="6000">
                     <video src="{{ asset('images/vid2.mp4') }}" class="d-block h-20 w-100" autoplay muted loop></video>
                     <div class="carousel-caption">
@@ -114,48 +114,41 @@
         <!-- Collections -->
         <div class="collection-container">
             <h1>Collections</h1>
+            <hr />
             <div class="row">
                 <div class="collection-col col-12 col-md mx-3">
                     <h4> Jewellery</h4>
-                    <img src="{{ asset('images/jewellery.webp') }}" alt="..." />
-                    <a><p>See more...</p></a>
+                    <a href="#"><img src="{{ asset('images/jewellery.webp') }}" alt="..." /></a>
                 </div>
                 <div class="collection-col col-12 col-md mx-3">
                     <h4> Home and Decor</h4>
-                    <img src="{{ asset('images/decor.jpg') }}" alt="..." />
-                    <a><p>See more curated Decors...</p></a>
+                    <a href="#"><img src="{{ asset('images/decor.jpg') }}" alt="..." /></a>
                 </div>
                 <div class="collection-col col-12 col-md mx-3">
                     <h4> Bags and Purses</h4>
-                    <img src="{{ asset('images/bag.webp') }}" alt="..." />
-                    <a><p>Shop Bags and Purses...</p></a>
+                    <a href="#"><img src="{{ asset('images/bag.webp') }}" alt="..." /></a>
                 </div>
                 <div class="collection-col col-12 col-md mx-3">
                     <h4> Art and Collectibles</h4>
-                    <img src="{{ asset('images/art.avif') }}" alt="..." />
-                    <a><p>Shop Now...</p></a>
+                    <a href="#"><img src="{{ asset('images/art.avif') }}" alt="..." /></a>
                 </div>
             </div>
             <div class="row">
                 <div class="collection-col col-12 col-md mx-3">
                     <h4> Books, Movies and Music</h4>
-                    <img src="{{ asset('images/books.jpg') }}" alt="..." />
-                    <a><p>Shop Books, Movies and Music...</p></a>
+                    <a href="#"><img src="{{ asset('images/books.jpg') }}" alt="..." /></a>
                 </div>
                 <div class="collection-col col-12 col-md mx-3">
                     <h4> Electronics</h4>
-                    <img src="{{ asset('images/electronics.jpg') }}" alt="..." />
-                    <a><p>See more from Wakazi Electronics...</p></a>
+                    <a href="#"><img src="{{ asset('images/electronics.jpg') }}" alt="..." /></a>
                 </div>
                 <div class="collection-col col-12 col-md mx-3">
                     <h4> Accesories</h4>
-                    <img src="{{ asset('images/accesories.jpg') }}" alt="..." />
-                    <a><p>Shop Accesories...</p></a>
+                    <a href="#"><img src="{{ asset('images/accesories.jpg') }}" alt="..." /></a>
                 </div>
                 <div class="collection-col col-12 col-md mx-3">
                     <h4> Craft supplies and Tools</h4>
-                    <img src="{{ asset('images/craft.jpg') }}" alt="..." />
-                    <a><p>See more African Crafts and Tools...</p></a>
+                    <a href="#"><img src="{{ asset('images/craft.jpg') }}" alt="..." /></a>
                 </div>
             </div>
         </div>
@@ -279,6 +272,32 @@
                 <div class="d-flex flex-column flex-lg-row align-items-center justify-content-center">
                     <a class="me-lg-3 mb-4 mb-lg-0" href="#!"><img class="app-badge" src="{{ asset('images/google-play-badge.svg') }}" alt="..." /></a>
                     <a href="#!"><img class="app-badge" src="{{ asset('images/app-store-badge.svg') }}" alt="..." /></a>
+                </div>
+            </div>
+        </section>
+        <section class="footer-top" id="footer-1">
+            <div class="container text-center">
+                <div class="row align-items-center flex-column flex-sm-row">
+                    <div class="col">
+                        <img src="{{ asset('images/x-diamond-fill.svg') }}" />
+                        <h5>Great Value</h5>
+                        <p class="col-p">We offer competitive prices on our product range.</p>
+                    </div>
+                    <div class="col">
+                        <img src="{{ asset('images/credit-card-2-front-fill.svg') }}" />
+                        <h5>Safe Payment</h5>
+                        <p class="col-p">Pay with the world’s most popular and secure payment methods.</p>
+                    </div>
+                    <div class="col">
+                        <img src="{{ asset('images/shield-lock-fill.svg') }}" />
+                        <h5>Shop with Confidence</h5>
+                        <p class="col-p">Our Buyer Protection covers your purchase from click to delivery</p>
+                    </div>
+                    <div class="col">
+                        <img src="{{ asset('images/question-circle-fill.svg') }}" />
+                        <h5>24/7 Help Center</h5>
+                        <p class="col-p">Round-the-clock assistance for a smooth shopping experience.</p>
+                    </div>
                 </div>
             </div>
         </section>
