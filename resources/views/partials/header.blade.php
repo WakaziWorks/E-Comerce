@@ -10,7 +10,7 @@
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <div class="navbar-nav me-4 my-3 my-lg-0">
                         <a href="#home"><button type="button" class="btn btn-light">Home</button></a>
-                        <a href="#home"><button type="button" class="btn btn-light">Products</button></a>
+                        <a href="#products"><button type="button" class="btn btn-light">Products</button></a>
                         <!-- <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
                             <ul class="navbar-nav">
                                 <li class="nav-item dropdown">
@@ -39,9 +39,9 @@
                                 </li>
                             </ul>
                         </div> -->
-                        <a href="#home"><button type="button" class="btn btn-light">Collections</button></a>
+                        <a href="#collection"><button type="button" class="btn btn-light">Collections</button></a>
                         <a href="#home"><button type="button" class="btn btn-light">Blog</button></a>
-                        <a href="#home"><button type="button" class="btn btn-light">Features</button></a>
+                        <a href="#features"><button type="button" class="btn btn-light">Features</button></a>
                     </div>
                     <div class="header-icons d-flex flex-column flex-lg-row ms-auto">
                         <form class="d-flex" role="search">

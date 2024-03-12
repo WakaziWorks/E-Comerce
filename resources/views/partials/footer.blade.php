@@ -34,7 +34,7 @@
         </div>
         <div class="bottom-footer" style="background-color: #E1AFD1;">
             <div>
-                <div class="mb-2">&copy; Your Website 2024. All Rights Reserved.</div>
+                <div class="mb-2">&copy; Wakazi Works 2024</div>
                 <a href="#!">Privacy</a>
                 <span class="mx-2">&middot;</span>
                 <a href="#!">Terms</a>
