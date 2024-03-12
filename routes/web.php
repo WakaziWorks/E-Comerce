@@ -39,6 +39,9 @@ Route::get('/products', function () {
 Route::get('/cart', function() {
     return view('cart');
 });
+Route::get('/blog', function() {
+    return view('blog');
+});
 
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
