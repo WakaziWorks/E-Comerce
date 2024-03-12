@@ -11290,3 +11290,43 @@ section.cta:before {
 .cart-contents p:hover{
   font-weight: normal;
 }
+
+/* Account image link */
+.popup {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 17rem;
+  margin-top: 0.87rem;
+  background-color: #f0f0f0;
+  border-radius: 15px;
+  padding: 20px 20px;
+}
+.popup-content button{
+  outline: none;
+  padding: 12px 20px;
+  border-radius: 12px;
+  margin-left: 15px;
+  font-size: large;
+}
+.popup.show {
+  display: block;
+}
+.signin-btn{
+  border: none;
+  outline: none;
+  background: #800080;
+  color: #f0f0f0;
+}
+.signin-btn:hover{
+  background: #4c0d6d;
+}
+.signup-btn{
+  border: 1px solid #800080;
+  color: #800080;
+  background: transparent;
+}
+.signup-btn:hover{
+  background: aliceblue;
+}

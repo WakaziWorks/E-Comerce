@@ -52,10 +52,53 @@
                         </form>
                         <div class="cart-login d-flex flex-column flex-lg-row">
                             <a href="" style="margin-right: 20px;"><img src="{{ asset('images/cart4.svg') }}" /></a>
-                            <a href=""><img src="{{ asset('images/person-check.svg') }}" /></a>
+                            <a href="" id="popup-trigger"><img src="{{ asset('images/person-check.svg') }}" /></a>
+                            <div class="popup" id="popup">
+                                <div class="popup-content">
+                                    <h4>Welcome Guest</h4>
+                                    <p>Manage Cart, Orders & Wishlist</p>
+                                    <hr />
+                                    <button class="signin-btn">Sign In</button>
+                                    <button class="signup-btn">Sign Up</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </nav>
+        <script>
+            // Get references to the icon and the popup
+            const popupTrigger = document.getElementById('popup-trigger');
+            const popup = document.getElementById('popup');
+
+            // Function to toggle the visibility of the popup
+            function togglePopup() {
+                popup.classList.toggle('show');
+
+                // If the popup is visible, position it below the icon
+                if (popup.classList.contains('show')) {
+                    const popupRect = popup.getBoundingClientRect();
+                    const iconRect = popupTrigger.getBoundingClientRect();
+                    const offsetLeft = iconRect.right - popupRect.width; // Adjusting position based on popup width
+                    const offsetTop = iconRect.bottom;
+                    popup.style.left = offsetLeft + 'px';
+                    popup.style.top = offsetTop + 'px';
+                }
+            }
+
+            // Event listener for clicking on the icon
+            popupTrigger.addEventListener('click', function(event) {
+                event.preventDefault(); // Prevent the default action of the anchor tag
+                togglePopup();
+            });
+
+            // Event listener for clicking outside the popup
+            document.addEventListener('click', function(event) {
+                if (!popup.contains(event.target) && !popupTrigger.contains(event.target)) {
+                    // If the click is outside the popup and the icon
+                    popup.classList.remove('show');
+                }
+            });
+        </script>
 </header>
