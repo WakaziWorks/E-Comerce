@@ -11185,26 +11185,25 @@ section.cta:before {
   margin-left: 20px;
 }
 .carousel-caption {
-  position: absolute;
-  top: 57%;
+  /* position: absolute; */
+  top: 53%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
 }
 .carousel-caption p{
-  font-weight: 400;
   font-size: larger;
 }
 .carousel-caption button{
   border: none;
   outline: none;
-  background-color: purple;
+  background-color: #800080;
   color: white;
-  padding: 10px 15px;
+  padding: 7px 10px;
   width: 160px;
   font-weight: 400;
   margin-left: 20px;
-  transition: background-color 1.2s ease-in-out, color 1.2s ease-in-out;
+  transition: background-color 1s ease-in-out, color 1s ease-in-out;
 }
 .carousel-caption button:hover{
   background-color: white;
