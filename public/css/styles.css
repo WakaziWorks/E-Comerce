@@ -100,8 +100,7 @@ body {
   line-height: var(--bs-body-line-height);
   color: var(--bs-body-color);
   text-align: var(--bs-body-text-align);
-  /* background-color: var(--bs-body-bg); */
-  background-color: aliceblue;
+  background-color: var(--bs-body-bg);
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
@@ -10860,11 +10859,11 @@ section {
   height: 3rem;
 }
 
-#mainNav {
+/* #mainNav {
   background-color: #e0c0ee;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-}
-#mainNav .navbar-brand {
+} */
+/* #mainNav .navbar-brand {
   font-family: "Kanit", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 #mainNav .navbar-brand:hover, #mainNav .navbar-brand:active {
@@ -10883,7 +10882,7 @@ section {
 }
 #mainNav .navbar-nav .nav-item .nav-link.active {
   color: #2937f0;
-}
+} */
 
 /*!
  * html5-device-mockups (https://github.com/pixelsign/html5-device-mockups)
@@ -11068,8 +11067,93 @@ section.cta:before {
     max-width: 17rem;
   }
 }
+
+
+
+
+
+
+
+
+
+/* Header section styling and more */
+.header{
+  background: #e6cbee;
+}
+/* Account image link */
+.popup {
+  display: none;
+  position: absolute;
+  left: 0;
+  width: 17em;
+  background: aliceblue;
+  border-radius: 7px;
+  padding: 10px 10px;
+}
+.popup-content button{
+  outline: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  margin-left: 19px;
+}
+.popup.show {
+  display: block;
+}
+.signin-btn{
+  border: none;
+  outline: none;
+  background: #800080;
+  color: #f0f0f0;
+}
+.signin-btn:hover{
+  background: #cf3bf7;
+}
+.signup-btn{
+  border: 1px solid #800080;
+  color: #800080;
+  background: transparent;
+}
+.signup-btn:hover{
+  background: white;
+}
+
+
+/* Navigation buttons */
+.nav-btn button{
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #cf3bf7;
+  border-radius: 0;
+  text-decoration: none;
+  font-size: larger;
+  font-family: monospace;
+  transition: background-color 1.2s ease-in-out, color 1.2s ease-in-out;
+}
+.nav-btn button:hover{
+  background-color: #cf3bf7;
+  color:white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Header/Navbar links */
-.btn-light{
+/* .btn-light{
   background: transparent;
   border: none;
   outline: none;
@@ -11086,9 +11170,9 @@ section.cta:before {
 .dropdown-menu{
   color: purple;
   border: none;
-}
+} */
 /* Search area */
-.input-group {
+/* .input-group {
   display: flex;
   align-items: center;
 }
@@ -11139,8 +11223,7 @@ section.cta:before {
   background: transparent;
   border: none;
   outline: none;
-}
-
+} */
 /* Footer section */
 .main-footer{
   padding-top: 60px;
@@ -11181,7 +11264,7 @@ section.cta:before {
 /* Carousel section */
 #carouselExampleCaptions{
   width: 98%;
-  margin-top: 110px;
+  margin-top: 130px;
   margin-left: 20px;
 }
 .carousel-caption {
@@ -11289,46 +11372,6 @@ section.cta:before {
 }
 .cart-contents p:hover{
   font-weight: normal;
-}
-
-/* Account image link */
-.popup {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 17rem;
-  margin-top: 0.87rem;
-  background-color: #f0f0f0;
-  border-radius: 15px;
-  padding: 20px 20px;
-}
-.popup-content button{
-  outline: none;
-  padding: 12px 20px;
-  border-radius: 12px;
-  margin-left: 15px;
-  font-size: large;
-}
-.popup.show {
-  display: block;
-}
-.signin-btn{
-  border: none;
-  outline: none;
-  background: #800080;
-  color: #f0f0f0;
-}
-.signin-btn:hover{
-  background: #4c0d6d;
-}
-.signup-btn{
-  border: 1px solid #800080;
-  color: #800080;
-  background: transparent;
-}
-.signup-btn:hover{
-  background: aliceblue;
 }
 /* Blog site */
 .blog{

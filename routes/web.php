@@ -20,28 +20,43 @@ use App\Http\Controllers\MpesaSTKPUSHController;
 |
 */
 
-Route::get('/', function () {
-    return Inertia::render('Welcome', [
-        'canLogin' => Route::has('login'),
-        'canRegister' => Route::has('register'),
-        'laravelVersion' => Application::VERSION,
-        'phpVersion' => PHP_VERSION,
-    ]);
-});
+// Route::get('/', function () {
+//     return Inertia::render('Welcome', [
+//         'canLogin' => Route::has('login'),
+//         'canRegister' => Route::has('register'),
+//         'laravelVersion' => Application::VERSION,
+//         'phpVersion' => PHP_VERSION,
+//     ]);
+// });
 
 Route::get("/posts", [PostsController::class, 'index']);
-Route::get('/home', function () {
+Route::get('/', function () {
     return view('home');
-});
+})->name('home');
+
 Route::get('/products', function () {
     return view('products');
-});
+})->name('products');
+
 Route::get('/cart', function() {
     return view('cart');
-});
+})->name('cart');
+
 Route::get('/blog', function() {
     return view('blog');
-});
+})->name('blog');
+
+Route::get('/collections', function() {
+    return view('collections');
+})->name('collections');
+
+Route::get('/features', function() {
+    return view('features');
+})->name('features');
+
+Route::get('/collaborations', function() {
+    return view('collaborations');
+})->name('collaborations');
 
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
