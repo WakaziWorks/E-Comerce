@@ -7,7 +7,7 @@
             <div class="col-sm-12 col-md-6">
                 <div class="container-fluid search">
                     <form class="d-flex position-relative" role="search">
-                        <input class="form-control me-2 rounded-0" type="search" placeholder="What can we help you find?" aria-label="Search" style="box-shadow: none; border: 1px solid #cf3bf7;">
+                        <input class="form-control me-2 search-area" type="search" placeholder="What can we help you find?" aria-label="Search" style="box-shadow: none; border-radius: 20px;">
                         <span class="position-absolute top-50 translate-middle-y d-none">
                             <button type="button" class="btn btn-link" style="left: 70px;">
                                 <i class="bi bi-x"></i>

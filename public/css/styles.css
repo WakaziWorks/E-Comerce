@@ -11078,8 +11078,14 @@ section.cta:before {
 
 /* Header section styling and more */
 .header{
-  background: #e6cbee;
+  background: #f5f2f6;
 }
+
+
+.search-area:hover{
+  border: 1px solid #cf3bf7
+}
+
 /* Account image link */
 .popup {
   display: none;
