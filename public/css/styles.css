@@ -11067,18 +11067,10 @@ section.cta:before {
     max-width: 17rem;
   }
 }
-
-
-
-
-
-
-
-
-
 /* Header section */
 .header{
-  background: #f0f0f0;
+  background: #f5f1f7;
+  margin: 0;
 }
 .f-nav{
   display: flex;
@@ -11086,8 +11078,8 @@ section.cta:before {
   align-items: center;
   width: 100%;
   padding: 5px;
-  margin-left: 7em;
-  margin-right: 7em;
+  margin-left: 5em;
+  margin-right: 3em;
 }
 .search-form{
   flex-grow: 1;
@@ -11096,32 +11088,65 @@ section.cta:before {
 .search-form input{
   border-radius: 20px;
   box-shadow: none;
-  outline: 1px solid #800080;
+  outline: 1px solid #000;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.menu-toggle {
+  cursor: pointer;
+}
+.dash {
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  margin: 5px 0;
 }
 
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #ffecb5;
+  border-radius: 4px;
+  min-width: 160px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
 /* Input group */
 .input-group {
   display: flex;
   flex-wrap: nowrap;
 }
-
 .input-group input {
   flex-grow: 1;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
-  margin-right: -4px;
 }
 .form-control:focus {
   box-shadow: none;
-  outline: 2px solid #800080;
+  outline: 2px solid #000;
 }
 .input-group button {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
-  outline: 1px solid #800080;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 300;
+  outline: none;
   border: none;
-  color: #800080;
-  background: transparent;
+  border: none;
+  color: #f0f0f0;
+  background: #800080;
   border-radius: 20px;
 }
 .input-group button:hover{
@@ -11130,14 +11155,18 @@ section.cta:before {
   outline: none;
   border: none;
 }
-
+.icons span{
+  color: #000;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-left: 0.15em;
+}
 /* Second Navbar */
 .f-nav-two {
   display: flex;
   justify-content: center;
   margin-left: 33em;
   margin-top: 0;
-  margin-bottom: 0.585em;
+  margin-bottom: 0;
 }
 .row-btn {
   display: flex;
@@ -11156,12 +11185,33 @@ section.cta:before {
   background: #cf3bf7;
   color: #f0f0f0;
 }
-
-
-
-
-
-
+.f-nav-two ul.row-btn {
+  list-style-type: none;
+  padding: 0;
+}
+.f-nav-two ul.row-btn li {
+  display: inline-block;
+  margin-right: 2em;
+}
+.f-nav-two ul.row-btn li:last-child {
+  margin-right: 0;
+}
+.f-nav-two ul.row-btn li a {
+  text-decoration: none;
+}
+.f-nav-two ul.row-btn li a span {
+  color: black;
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: transparent;
+  border-radius: 0;
+  padding: 3px 7px;
+  transition: background-color 0.9s ease;
+}
+.f-nav-two ul.row-btn li a span:hover{
+  color: white;
+  background: purple;
+}
 /* Account image link */
 .popup {
   display: none;
@@ -11198,114 +11248,6 @@ section.cta:before {
 .signup-btn:hover{
   background: white;
 }
-
-
-/* Navigation buttons */
-/* .nav-btn button{
-  background: transparent;
-  border: none;
-  outline: none;
-  color: #cf3bf7;
-  border-radius: 0;
-  text-decoration: none;
-  font-size: larger;
-  font-family: monospace;
-  transition: background-color 1.2s ease-in-out, color 1.2s ease-in-out;
-}
-.nav-btn button:hover{
-  background-color: #cf3bf7;
-  color:white;
-} */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Header/Navbar links */
-/* .btn-light{
-  background: transparent;
-  border: none;
-  outline: none;
-  color: purple;
-  border-radius: 0;
-  text-decoration: none;
-  font-size: large;
-  transition: background-color 1.2s ease-in-out, color 1.2s ease-in-out;
-}
-.btn-light:hover{
-  background-color: purple;
-  color:white;
-}
-.dropdown-menu{
-  color: purple;
-  border: none;
-} */
-/* Search area */
-/* .input-group {
-  display: flex;
-  align-items: center;
-}
-.input-group input {
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-  border: none;
-  outline: none;
-  background: aliceblue;
-}
-.input-group button {
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-  background-color: purple;
-  color: white;
-  border: none;
-  outline: none;
-  margin-right: 20px;
-}
-.input-group button:hover{
-  background-color: #800080;
-  color: white;
-  border: none;
-}
-
-.dropdown-menu {
-  outline: none;
-  border: none;
-  background-color: aliceblue;
-  background-size: cover;
-}
-.dropdonwmenu-btn{
-  display: none;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  box-shadow: #343a40;
-  border: 1px solid purple;
-  outline: none;
-  justify-content: center;
-  text-align: center;
-  background: transparent;
-}
-.dropdown:hover .dropdown-menu{
-  display: block;
-  opacity: 1;
-}
-.dropdown button{
-  background: transparent;
-  border: none;
-  outline: none;
-} */
 /* Footer section */
 .main-footer{
   padding-top: 60px;
@@ -11329,7 +11271,7 @@ section.cta:before {
   color: white;
 }
 #download{
-  background-color: #FFE6E6;
+  background-color: #e6cbee;
 }
 #footer-1{
   background-color: #E1AFD1;
@@ -11391,8 +11333,9 @@ section.cta:before {
 }
 .collection-container h1{
   color: black;
-  margin-left: 40px;
-  text-align: left;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: lighter;
+  text-align: center;
   margin-top: 20px;
 }
 .row{
@@ -11409,14 +11352,42 @@ section.cta:before {
 .collection-col h4{
   margin: 10px 10px;
   color: black;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: normal;
 }
 .collection-col h4:hover{
   color: purple;
 }
 .collection-col img{
   width: 100%;
-  height: 83%;
+  height: 80%;
+}
+/* Products styling */
+.prod-col{
+  border-radius: 15px;
+  margin-left: 0;
+  margin-right: 0;
+}
+.prod-col img{
+  width: 80%;
+  height: 80%;
+  margin-top: 5px;
+  margin-left: 25px;
+  border-radius: 13px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+.prod-col img:hover{
+  box-shadow: 0 12px 26px rgba(0, 0, 0, 0.2);
+}
+.prod-col p{
+  text-decoration: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: lighter;
+  color: #000;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 25px;
 }
 
 /* Cart page styling */

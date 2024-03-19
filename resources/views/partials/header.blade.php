@@ -1,6 +1,22 @@
     <div class="header fixed-top">
         <div class="nav">
-            <nav class="f-nav">
+            <div class="f-nav">
+                <div class="dropdown" style="margin-left: 30px;">
+                    <div class="menu-toggle" onclick="toggleMenu()">
+                        <div class="dash"></div>
+                        <div class="dash"></div>
+                        <div class="dash"></div>
+                    </div>
+                    <div class="dropdown-content">
+                        <a href="#">Jewellery</a>
+                        <a href="#">Bags & purses</a>
+                        <a href="#">Home & decor</a>
+                        <a href="#">Accesories</a>
+                        <a href="#">Art & collectibles</a>
+                        <a href="#">Craft supplies & tools</a>
+                        <a href="#">Books, Movies, Music</a>
+                    </div>
+                </div>
                 <a class="navbar-brand fw-bold" id="logo" href="{{ route('home') }}">
                     <img src="{{ asset('images/WhatsApp_Image_2024-02-28_at_15.48.15-removebg-preview.png') }}" height="90px" width="110px">
                 </a>
@@ -11,9 +27,18 @@
                     </div>
                 </form>
                 <div class="icons">
-                    <a href="{{ route('cart') }}" style="margin: 12px"><img src="{{ asset('images/cart4.svg') }}" /></a>
-                    <a href="" style="margin: 12px" id="popup-trigger"><img src="{{ asset('images/person-check.svg') }}" /></a>
-                    <a href="" style="margin: 12x"><img src="{{ asset('images/patch-question-fill.svg') }}" /></a>
+                    <a href="{{ route('cart') }}" style="margin: 10px; text-decoration: none;">
+                        <img src="{{ asset('images/cart4.svg') }}" />
+                        <span>Cart</span>
+                    </a>
+                    <a href="" style="margin: 10px; text-decoration: none;" id="popup-trigger">
+                        <img src="{{ asset('images/person-check.svg') }}" />
+                        <span>Account</span>
+                    </a>
+                    <a href="" style="margin: 10px; text-decoration: none;">
+                        <img src="{{ asset('images/patch-question-fill.svg') }}" />
+                        <span>Help</span>
+                    </a>
                 </div>
                 <div class="popup" id="popup">
                     <div class="popup-content">
@@ -34,18 +59,18 @@
                         @endif
                     </div>
                 </div>
-            </nav>
-            <nav class="f-nav-two">
-                <div class="row-btn">
-                    <a href="{{ route('home') }}"><button>Home</button></a>
-                    <a href="{{ route('products') }}"><button>Products</button></a>
-                    <a href="{{ route('collections') }}"><button>Collections</button></a>
-                    <a href="{{ route('blog') }}"><button>Blog</button></a>
-                    <a href="{{ route('features') }}"><button>Features</button></a>
-                    <!-- <a href="{{ route('collaborations') }}"><button>COLLABORATIONS</button></a> -->
-                </div>
+            </div>
+            <nav class="f-nav-two" style="margin-top: 0;">
+                <ul class="row-btn">
+                    <li><a href="{{ route('home') }}"><span>Home</span></a></li>
+                    <li><a href="{{ route('products') }}"><span>Products</span></a></li>
+                    <li><a href="{{ route('collections') }}"><span>Collections</span></a></li>
+                    <li><a href="{{ route('blog') }}"><span>Blog</span></a></li>
+                    <li><a href="{{ route('features') }}"><span>Features</span></a></li>
+                </ul>
             </nav>
         </div>
+        <hr style="margin-bottom: 0; margin-top: 0;"/>
         <script>
             const popupTrigger = document.getElementById('popup-trigger');
             const popup = document.getElementById('popup');
@@ -72,5 +97,9 @@
                     popup.classList.remove('show');
                 }
             });
+            function toggleMenu() {
+                var dropdownContent = document.querySelector('.dropdown-content');
+                dropdownContent.style.display === 'block' ? dropdownContent.style.display = 'none' : dropdownContent.style.display = 'block';
+                }
         </script>
     </div>

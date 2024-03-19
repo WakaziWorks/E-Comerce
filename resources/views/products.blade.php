@@ -26,7 +26,100 @@
     </head>
     <body>
         @extends('partials.header')
-        <section style="margin-top: 120px;">
+        <section style="margin-top: 70px;">
+            <h1 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin-left: 20px;">New Arrivals</h1>
+            <div class="row">
+                <div class="prod-col col-12 col-md mx-3">
+                    <a href="#" style="text-decoration: none;">
+                        <img src="{{ asset('images/jewellery.webp') }}" alt="..." />
+                        <p style="margin-top: 1em;">Jewellery at it's best</p>
+                        <p>Kshs. 7000.00</p>
+                    </a>
+                </div>
+                <div class="prod-col col-12 col-md mx-3">
+                    <a href="#" style="text-decoration: none;">
+                        <img src="{{ asset('images/jewellery.webp') }}" alt="..." />
+                        <p style="margin-top: 1em;">Jewellery at it's best</p>
+                        <p>Kshs. 7000.00</p>
+                    </a>
+                </div>
+                <div class="prod-col col-12 col-md mx-3">
+                    <a href="#" style="text-decoration: none;">
+                        <img src="{{ asset('images/jewellery.webp') }}" alt="..." />
+                        <p style="margin-top: 1em;">Jewellery at it's best</p>
+                        <p>Kshs. 7000.00</p>
+                    </a>
+                </div>
+                <div class="prod-col col-12 col-md mx-3">
+                    <a href="#" style="text-decoration: none;">
+                        <img src="{{ asset('images/jewellery.webp') }}" alt="..." />
+                        <p style="margin-top: 1em;">Jewellery at it's best</p>
+                        <p>Kshs. 7000.00</p>
+                    </a>
+                </div>
+                <div class="prod-col col-12 col-md mx-3">
+                    <a href="#" style="text-decoration: none;">
+                        <img src="{{ asset('images/jewellery.webp') }}" alt="..." />
+                        <p style="margin-top: 1em;">Jewellery at it's best</p>
+                        <p>Kshs. 7000.00</p>
+                    </a>
+                </div>
+                <div class="prod-col col-12 col-md mx-3">
+                    <a href="#" style="text-decoration: none;">
+                        <img src="{{ asset('images/jewellery.webp') }}" alt="..." />
+                        <p style="margin-top: 1em;">Jewellery at it's best</p>
+                        <p>Kshs. 7000.00</p>
+                    </a>
+                </div>
+            </div>
+            <div class="row" style="margin-top: 70px;">
+                <div class="prod-col col-12 col-md mx-3">
+                    <a href="#" style="text-decoration: none;">
+                        <img src="{{ asset('images/jewellery.webp') }}" alt="..." />
+                        <p style="margin-top: 1em;">Jewellery at it's best</p>
+                        <p>Kshs. 7000.00</p>
+                    </a>
+                </div>
+                <div class="prod-col col-12 col-md mx-3">
+                    <a href="#" style="text-decoration: none;">
+                        <img src="{{ asset('images/jewellery.webp') }}" alt="..." />
+                        <p style="margin-top: 1em;">Jewellery at it's best</p>
+                        <p>Kshs. 7000.00</p>
+                    </a>
+                </div>
+                <div class="prod-col col-12 col-md mx-3">
+                    <a href="#" style="text-decoration: none;">
+                        <img src="{{ asset('images/jewellery.webp') }}" alt="..." />
+                        <p style="margin-top: 1em;">Jewellery at it's best</p>
+                        <p>Kshs. 7000.00</p>
+                    </a>
+                </div>
+                <div class="prod-col col-12 col-md mx-3">
+                    <a href="#" style="text-decoration: none;">
+                        <img src="{{ asset('images/jewellery.webp') }}" alt="..." />
+                        <p style="margin-top: 1em;">Jewellery at it's best</p>
+                        <p>Kshs. 7000.00</p>
+                    </a>
+                </div>
+                <div class="prod-col col-12 col-md mx-3">
+                    <a href="#" style="text-decoration: none;">
+                        <img src="{{ asset('images/jewellery.webp') }}" alt="..." />
+                        <p style="margin-top: 1em;">Jewellery at it's best</p>
+                        <p>Kshs. 7000.00</p>
+                    </a>
+                </div>
+                <div class="prod-col col-12 col-md mx-3">
+                    <a href="#" style="text-decoration: none;">
+                        <img src="{{ asset('images/jewellery.webp') }}" alt="..." />
+                        <p style="margin-top: 1em;">Jewellery at it's best</p>
+                        <p>Kshs. 7000.00</p>
+                    </a>
+                </div>
+            </div>
+            <div>
+                <button style="background: #800080; color: white; padding: 10px 15px; margin-left: 50em; margin-top: 3em; margin-bottom: 3em; border: none; outline: none; width: 120px;">View all</button>
+            </div>
+        </secion>
         @extends('partials.footer')
     </body>
 </html>

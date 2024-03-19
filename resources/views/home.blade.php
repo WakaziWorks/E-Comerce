@@ -115,7 +115,7 @@
 
     <!-- Collections -->
     <div class="collection-container" id="collection">
-        <h1>Collections</h1>
+        <h1>Shop by collections</h1>
         <hr />
         <div class="row">
             <div class="collection-col col-12 col-md mx-3">
@@ -157,7 +157,7 @@
     <!-- Product Section -->
     <section id="products" class="py-5">
         <div class="container">
-            <h2 class="text-center font-alt mb-5">Featured Products</h2>
+            <h2 class="text-center font-alt mb-5" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight: lighter;">Featured Products</h2>
             <div class="row g-4">
                 <!-- Product 1 -->
                 <div class="col-md-6 col-lg-4">
@@ -198,7 +198,7 @@
     </section>
 
     <!-- App features section-->
-    <section id="features" id="features">
+    <section id="features" id="features" style="background: #e6cbee;">
         <div class="container px-5">
             <div class="row gx-5 align-items-center">
                 <div class="col-lg-8 order-lg-1 mb-5 mb-lg-0">
@@ -277,7 +277,7 @@
         </div>
     </section>
     <!-- Quote/testimonial aside-->
-    <aside class="text-center bg-secondary">
+    <!-- <aside class="text-center bg-secondary">
         <div class="container px-5">
             <div class="row gx-5 justify-content-center">
                 <div class="col-xl-8">
@@ -286,7 +286,7 @@
                 </div>
             </div>
         </div>
-    </aside>
+    </aside> -->
     <!-- Basic features section-->
     <section class="bg-light">
         <div class="container px-5">
@@ -302,7 +302,7 @@
         </div>
     </section>
     <!-- Call to action section-->
-    <section class="cta">
+    <!-- <section class="cta">
         <div class="cta-content">
             <div class="container px-5">
                 <h2 class="text-white display-1 lh-1 mb-4">
@@ -313,9 +313,9 @@
                 <a class="btn btn-outline-light py-3 px-4 rounded-pill" href="https://startbootstrap.com/theme/new-age" target="_blank">Download for free</a>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- App badge section-->
-    <section class="bg-white-primary-to-secondary" id="download">
+    <section class="bg-white-primary-to-secondary" id="download" style="#e6cbee">
         <div class="container px-5">
             <h2 class="text-center text-purple font-alt mb-4">Get the app now!</h2>
             <div class="d-flex flex-column flex-lg-row align-items-center justify-content-center">
