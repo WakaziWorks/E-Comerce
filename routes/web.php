@@ -38,23 +38,23 @@ Route::get('/products', function () {
     return view('products');
 })->name('products');
 
-Route::get('/cart', function() {
+Route::get('/cart', function () {
     return view('cart');
 })->name('cart');
 
-Route::get('/blog', function() {
+Route::get('/blog', function () {
     return view('blog');
 })->name('blog');
 
-Route::get('/collections', function() {
+Route::get('/collections', function () {
     return view('collections');
 })->name('collections');
 
-Route::get('/features', function() {
+Route::get('/features', function () {
     return view('features');
 })->name('features');
 
-Route::get('/collaborations', function() {
+Route::get('/collaborations', function () {
     return view('collaborations');
 })->name('collaborations');
 
@@ -71,4 +71,10 @@ Route::middleware('auth')->group(function () {
 Route::post('/v1/mpesatest/stk/push', [MpesaSTKPUSHController::class, 'STKPush']);
 
 
-require __DIR__.'/auth.php';
+require __DIR__ . '/auth.php';
+
+Route::get('/dashboard', [ProductController::class, 'index']);  
+Route::get('/shopping-cart', [ProductController::class, 'productCart'])->name('shopping.cart');
+Route::get('/product/{id}', [ProductController::class, 'addProducttoCart'])->name('addProduct.to.cart');
+Route::patch('/update-shopping-cart', [ProductController::class, 'updateCart'])->name('update.sopping.cart');
+Route::delete('/delete-cart-product', [ProductController::class, 'deleteProduct'])->name('delete.cart.product');

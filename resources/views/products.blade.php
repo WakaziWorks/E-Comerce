@@ -116,6 +116,9 @@
                     </a>
                 </div>
             </div>
+
+         
+
             <div>
                 <button style="background: #800080; color: white; padding: 10px 15px; margin-left: 50em; margin-top: 3em; margin-bottom: 3em; border: none; outline: none; width: 120px;">View all</button>
             </div>

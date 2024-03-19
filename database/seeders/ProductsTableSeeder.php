@@ -2,60 +2,34 @@
 
 namespace Database\Seeders;
 
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
-use Illuminate\Support\Facades\DB;
-use App\Models\Category;
-use App\Models\Product;
-use App\Models\Supplier;
+use App\Models\Categories; // Use your actual Category model namespace
+use App\Models\Product; // Assuming you have a Product model
+use App\Models\Supplier; // Assuming you have a Supplier model
 
 class ProductsTableSeeder extends Seeder
 {
-    /**
-     * Run the database seeds.
-     */
     public function run(): void
     {
         // Ensure that there is a category named 'Collection' in the database
-        $collectionCategory = CategoriesTableSeeder::firstOrCreate([
-            'name' => 'Collection', // Assuming 'name' is the column for category name
+        $collectionCategory = Categories::firstOrCreate([
+            'CategoryName' => 'Collection', // Ensure this matches the column name in your categories table
         ]);
 
         // Ensure that there is at least one supplier in the database
-        // This is a simplistic approach, in a real scenario, you would want to have specific suppliers
-        $supplier = Suppliers::firstOrCreate([
-            'name' => 'Default Supplier', // Assuming 'name' is the column for supplier name
-        ]);
+        // This is simplistic and should be adjusted to match your actual requirements
+        $supplier = Suppliers::firstOrFail(); // Or use firstOrCreate with appropriate criteria
 
-        // Now, we seed the products table with some products that belong to the 'Collection' category
+        // Seed the products table with some products
         $products = [
-            [
-                'ProductName' => 'Product 1',
-                'SupplierID' => $supplier->id,
-                'CategoryID' => $collectionCategory->id,
-                'QuantityPerUnit' => '10 boxes',
-                'UnitPrice' => 20.00,
-                'UnitsInStock' => 100,
-                'UnitsOnOrder' => 50,
-                'ReorderLevel' => 20,
-                'Discontinued' => false,
-            ],
-            [
-                'ProductName' => 'Product 2',
-                'SupplierID' => $supplier->id,
-                'CategoryID' => $collectionCategory->id,
-                'QuantityPerUnit' => '20 boxes',
-                'UnitPrice' => 25.00,
-                'UnitsInStock' => 200,
-                'UnitsOnOrder' => 80,
-                'ReorderLevel' => 30,
-                'Discontinued' => false,
-            ],
-            // Add more products as needed
+            // Define your products here
         ];
 
         foreach ($products as $product) {
-            Product::create($product);
+            Product::create($product + [
+                'CategoryID' => $collectionCategory->Category_ID, // or 'id' if your primary key is named 'id'
+                'SupplierID' => $supplier->SupplierID, // Adjust according to your column name
+            ]);
         }
     }
 }
