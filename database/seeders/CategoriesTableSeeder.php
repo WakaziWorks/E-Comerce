@@ -22,7 +22,7 @@ class CategoriesTableSeeder extends Seeder
 
         // Loop through each category and insert it into the database
         foreach ($categories as $category) {
-            Category::create($category);
+            CategoriesTableSeeder::create($category);
         }
     }
 }
