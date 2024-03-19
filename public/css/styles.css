@@ -11076,15 +11076,91 @@ section.cta:before {
 
 
 
-/* Header section styling and more */
+/* Header section */
 .header{
-  background: #f5f2f6;
+  background: #f0f0f0;
+}
+.f-nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 5px;
+  margin-left: 7em;
+  margin-right: 7em;
+}
+.search-form{
+  flex-grow: 1;
+  margin: 0 20px;
+}
+.search-form input{
+  border-radius: 20px;
+  box-shadow: none;
+  outline: 1px solid #800080;
+}
+
+/* Input group */
+.input-group {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.input-group input {
+  flex-grow: 1;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  margin-right: -4px;
+}
+.form-control:focus {
+  box-shadow: none;
+  outline: 2px solid #800080;
+}
+.input-group button {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  outline: 1px solid #800080;
+  border: none;
+  color: #800080;
+  background: transparent;
+  border-radius: 20px;
+}
+.input-group button:hover{
+  background: #800080;
+  color: #f0f0f0;
+  outline: none;
+  border: none;
+}
+
+/* Second Navbar */
+.f-nav-two {
+  display: flex;
+  justify-content: center;
+  margin-left: 33em;
+  margin-top: 0;
+  margin-bottom: 0.585em;
+}
+.row-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.row-btn button {
+  margin: 0 10px;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-weight: bold;
+  color: #cf3bf7;
+}
+.row-btn button:hover{
+  background: #cf3bf7;
+  color: #f0f0f0;
 }
 
 
-.search-area:hover{
-  border: 1px solid #cf3bf7
-}
+
+
+
 
 /* Account image link */
 .popup {
@@ -11125,7 +11201,7 @@ section.cta:before {
 
 
 /* Navigation buttons */
-.nav-btn button{
+/* .nav-btn button{
   background: transparent;
   border: none;
   outline: none;
@@ -11139,7 +11215,7 @@ section.cta:before {
 .nav-btn button:hover{
   background-color: #cf3bf7;
   color:white;
-}
+} */
 
 
 
@@ -11270,7 +11346,7 @@ section.cta:before {
 /* Carousel section */
 #carouselExampleCaptions{
   width: 98%;
-  margin-top: 130px;
+  margin-top: 100px;
   margin-left: 20px;
 }
 .carousel-caption {

@@ -1,33 +1,20 @@
-<header class="header fixed-top">
-    <div class="container-fluid" style="margin-top: 0px;">
-        <div class="row align-items-center">
-            <div class="col-sm-12 col-md-3">
-                <a class="navbar-brand fw-bold" href="#page-top"><img src="{{ asset('images/WhatsApp_Image_2024-02-28_at_15.48.15-removebg-preview.png') }}" height="90px" width="110px"></a>
-            </div>
-            <div class="col-sm-12 col-md-6">
-                <div class="container-fluid search">
-                    <form class="d-flex position-relative" role="search">
-                        <input class="form-control me-2 search-area" type="search" placeholder="What can we help you find?" aria-label="Search" style="box-shadow: none; border-radius: 20px;">
-                        <span class="position-absolute top-50 translate-middle-y d-none">
-                            <button type="button" class="btn btn-link" style="left: 70px;">
-                                <i class="bi bi-x"></i>
-                            </button>
-                            <button type="button" class="btn btn-link">
-                                <i class="bi bi-search"></i>
-                            </button>
-                        </span>
-                        <!-- <span class="position-absolute top-50 end-0 translate-middle-y">
-                            <button type="button" class="btn btn-link">
-                                <i class="bi bi-search"></i>
-                            </button>
-                        </span> -->
-                    </form>
+    <div class="header fixed-top">
+        <div class="nav">
+            <nav class="f-nav">
+                <a class="navbar-brand fw-bold" id="logo" href="{{ route('home') }}">
+                    <img src="{{ asset('images/WhatsApp_Image_2024-02-28_at_15.48.15-removebg-preview.png') }}" height="90px" width="110px">
+                </a>
+                <form class="search-form" role="search">
+                    <div class="input-group">
+                        <input class="form-control me-2" type="search" placeholder="I am looking for..." aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </div>
+                </form>
+                <div class="icons">
+                    <a href="{{ route('cart') }}" style="margin: 12px"><img src="{{ asset('images/cart4.svg') }}" /></a>
+                    <a href="" style="margin: 12px" id="popup-trigger"><img src="{{ asset('images/person-check.svg') }}" /></a>
+                    <a href="" style="margin: 12x"><img src="{{ asset('images/patch-question-fill.svg') }}" /></a>
                 </div>
-            </div>
-            <div class="col-sm-12 col-md-3 text-end">
-                <a href="{{ route('cart') }}" style="margin: 12px"><img src="{{ asset('images/cart4.svg') }}" /></a>
-                <a href="" style="margin: 12px" id="popup-trigger"><img src="{{ asset('images/person-check.svg') }}" /></a>
-                <a href="" style="margin: 12x"><img src="{{ asset('images/patch-question-fill.svg') }}" /></a>
                 <div class="popup" id="popup">
                     <div class="popup-content">
                         <h5 style="text-align: center;">Welcome Guest</h5>
@@ -39,7 +26,6 @@
                                     <a href="{{ url('/home') }}" class="font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Home</a>
                                 @else
                                     <a href="{{ route('login') }}" class="font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500"><button class="signin-btn">Sign In</button></a>
-
                                     @if (Route::has('register'))
                                         <a href="{{ route('register') }}" class="ml-4 font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500"><button class="signup-btn">Sign Up</button></a>
                                     @endif
@@ -48,37 +34,19 @@
                         @endif
                     </div>
                 </div>
-            </div>
+            </nav>
+            <nav class="f-nav-two">
+                <div class="row-btn">
+                    <a href="{{ route('home') }}"><button>Home</button></a>
+                    <a href="{{ route('products') }}"><button>Products</button></a>
+                    <a href="{{ route('collections') }}"><button>Collections</button></a>
+                    <a href="{{ route('blog') }}"><button>Blog</button></a>
+                    <a href="{{ route('features') }}"><button>Features</button></a>
+                    <!-- <a href="{{ route('collaborations') }}"><button>COLLABORATIONS</button></a> -->
+                </div>
+            </nav>
         </div>
-    </div>
-    <div class="container-fluid d-flex justify-content-center" style="margin-top: 0; background-color: #f1e6f4;">
-        <div style="width: 50%;">
-            <div class="row">
-                <div class="col nav-btn">
-                    <a href="{{ route('home') }}"><button>HOME</button></a>
-                </div>
-                <div class="col nav-btn">
-                    <a href="{{ route('products') }}"><button>PRODUCTS</button></a>
-                </div>
-                <div class="col nav-btn">
-                    <a href="{{ route('collections') }}"><button>COLLECTIONS</button></a>
-                </div>
-                <div class="col nav-btn">
-                    <a href="{{ route('blog') }}"><button>BLOG</button></a>
-                </div>
-                <div class="col nav-btn">
-                    <a href="{{ route('features') }}"><button>FEATURES</button></a>
-                </div>
-                <div class="col nav-btn">
-                    <a href="{{ route('collaborations') }}"><button>COLLABORATIONS</button></a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- <div class="container-fluid" style="background-color: blue">
-        <h1>Categories</h1>
-    </div> -->
-    <script>
+        <script>
             const popupTrigger = document.getElementById('popup-trigger');
             const popup = document.getElementById('popup');
 
@@ -105,6 +73,165 @@
                 }
             });
         </script>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <header class="header fixed-top">
+    <div class="header-div" style="background-color: blue; margin: 20px;">
+        <div class="container-fluid" style="margin-top: 0px; background-color: red;">
+            <div class="row align-items-center">
+                <div class="col-sm-12 col-md-3">
+                    <a class="navbar-brand fw-bold" href="#page-top"><img src="{{ asset('images/WhatsApp_Image_2024-02-28_at_15.48.15-removebg-preview.png') }}" height="90px" width="110px"></a>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <div class="container-fluid search">
+                        <form class="d-flex position-relative" role="search">
+                            <input class="form-control me-2 search-area" type="search" placeholder="What can we help you find?" aria-label="Search" style="box-shadow: none; border-radius: 15px;">
+                            <span class="position-absolute top-50 translate-middle-y d-none">
+                                <button type="button" class="btn btn-link" style="left: 70px;">
+                                    <i class="bi bi-x"></i>
+                                </button>
+                                <button type="button" class="btn btn-link">
+                                    <i class="bi bi-search"></i>
+                                </button>
+                            </span> -->
+                            <!-- <span class="position-absolute top-50 end-0 translate-middle-y">
+                                <button type="button" class="btn btn-link">
+                                    <i class="bi bi-search"></i>
+                                </button>
+                            </span> -->
+                        <!-- </form>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-3 text-end">
+                    <a href="{{ route('cart') }}" style="margin: 12px"><img src="{{ asset('images/cart4.svg') }}" /></a>
+                    <a href="" style="margin: 12px" id="popup-trigger"><img src="{{ asset('images/person-check.svg') }}" /></a>
+                    <a href="" style="margin: 12x"><img src="{{ asset('images/patch-question-fill.svg') }}" /></a>
+                    <div class="popup" id="popup">
+                        <div class="popup-content">
+                            <h5 style="text-align: center;">Welcome Guest</h5>
+                            <p style="text-align: center;">Manage Cart, Orders & Wishlist</p>
+                            <hr />
+                            @if (Route::has('login'))
+                                <div class="sm:fixed sm:top-0 sm:right-0 p-6 text-right z-10">
+                                    @auth
+                                        <a href="{{ url('/home') }}" class="font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Home</a>
+                                    @else
+                                        <a href="{{ route('login') }}" class="font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500"><button class="signin-btn">Sign In</button></a>
+
+                                        @if (Route::has('register'))
+                                            <a href="{{ route('register') }}" class="ml-4 font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500"><button class="signup-btn">Sign Up</button></a>
+                                        @endif
+                                    @endauth
+                                </div>
+                            @endif
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!-- <div class="container-fluid d-flex justify-content-center" style="margin-top: 0; background-color: pink;">
+            <div style="width: 50%;">
+                <div class="row">
+                    <div class="col nav-btn">
+                        <a href="{{ route('home') }}"><button>HOME</button></a>
+                    </div>
+                    <div class="col nav-btn">
+                        <a href="{{ route('products') }}"><button>PRODUCTS</button></a>
+                    </div>
+                    <div class="col nav-btn">
+                        <a href="{{ route('collections') }}"><button>COLLECTIONS</button></a>
+                    </div>
+                    <div class="col nav-btn">
+                        <a href="{{ route('blog') }}"><button>BLOG</button></a>
+                    </div>
+                    <div class="col nav-btn">
+                        <a href="{{ route('features') }}"><button>FEATURES</button></a>
+                    </div>
+                    <div class="col nav-btn">
+                        <a href="{{ route('collaborations') }}"><button>COLLABORATIONS</button></a>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!-- <div class="container-fluid" style="background-color: blue">
+            <h1>Categories</h1>
+        </div> -->
+    <!-- </div>
+    <script>
+        const popupTrigger = document.getElementById('popup-trigger');
+        const popup = document.getElementById('popup');
+
+        function togglePopup() {
+            popup.classList.toggle('show');
+
+            if (popup.classList.contains('show')) {
+                const popupRect = popup.getBoundingClientRect();
+                const iconRect = popupTrigger.getBoundingClientRect();
+                const offsetLeft = iconRect.right - popupRect.width;
+                const offsetTop = iconRect.bottom;
+                popup.style.left = offsetLeft + 'px';
+                popup.style.top = offsetTop + 'px';
+            }
+        }
+        popupTrigger.addEventListener('click', function(event) {
+            event.preventDefault();
+            togglePopup();
+        });
+
+        document.addEventListener('click', function(event) {
+            if (!popup.contains(event.target) && !popupTrigger.contains(event.target)) {
+                popup.classList.remove('show');
+            }
+        });
+    </script>
 </header>
 
 

@@ -37,27 +37,27 @@
         <div class="carousel-inner ratio ratio-21x9">
             <div class="carousel-item active" data-bs-interval="6000">
                 <video src="{{ asset('images/vid2.mp4') }}" class="d-block h-20 w-100" autoplay muted loop></video>
-                <div class="carousel-caption">
+                <!-- <div class="carousel-caption">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                     <button><a href="#collection">EXPLORE</a></button>
                     <button><a href="#features">EXPLORE</a></button>
-                </div>
+                </div> -->
             </div>
             <div class="carousel-item" data-bs-interval="6000">
                 <video src="{{ asset('images/vid1.mp4') }}" class="d-block h-20 w-100" autoplay muted loop></video>
-                <div class="carousel-caption">
+                <!-- <div class="carousel-caption">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                     <button>SHOP</button>
                     <button>EXPLORE</button>
-                </div>
+                </div> -->
             </div>
             <div class="carousel-item" data-bs-interval="6000">
                 <video src="{{ asset('images/vid3.mp4') }}" class="d-block h-20 w-100" autoplay muted loop></video>
-                <div class="carousel-caption">
+                <!-- <div class="carousel-caption">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                     <button>SHOP</button>
                     <button>EXPLORE</button>
-                </div>
+                </div> -->
             </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
@@ -162,7 +162,8 @@
                 <!-- Product 1 -->
                 <div class="col-md-6 col-lg-4">
                     <div class="card product-card">
-                    <img src="{{ asset('images/electronics.jpg') }}" alt="..." /></a>                        <div class="card-body">
+                    <img src="{{ asset('images/electronics.jpg') }}" alt="..." /></a>                        
+                    <div class="card-body">
                             <h5 class="card-title">Electronics</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                             <a href="#" class="btn btn-primary">View Details</a>
