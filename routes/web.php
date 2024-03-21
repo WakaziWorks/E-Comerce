@@ -73,8 +73,30 @@ Route::post('/v1/mpesatest/stk/push', [MpesaSTKPUSHController::class, 'STKPush']
 
 require __DIR__ . '/auth.php';
 
-Route::get('/dashboard', [ProductController::class, 'index']);  
-Route::get('/shopping-cart', [ProductController::class, 'productCart'])->name('shopping.cart');
-Route::get('/product/{id}', [ProductController::class, 'addProducttoCart'])->name('addProduct.to.cart');
-Route::patch('/update-shopping-cart', [ProductController::class, 'updateCart'])->name('update.sopping.cart');
-Route::delete('/delete-cart-product', [ProductController::class, 'deleteProduct'])->name('delete.cart.product');
+// Route::get('/dashboard', [ProductController::class, 'index']);  
+// Route::get('/shopping-cart', [ProductController::class, 'productCart'])->name('shopping.cart');
+// Route::get('/product/{id}', [ProductController::class, 'addProducttoCart'])->name('addProduct.to.cart');
+// Route::patch('/update-shopping-cart', [ProductController::class, 'updateCart'])->name('update.sopping.cart');
+// Route::delete('/delete-cart-product', [ProductController::class, 'deleteProduct'])->name('delete.cart.product');
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+
+// -----------------------------login-------------------------------//
+Route::controller(LoginController::class)->group(function () {
+    Route::get('/login', 'login')->name('login');
+    Route::post('/login', 'authenticate');
+    Route::get('/logout', 'logout')->name('logout');
+});
+
+// ------------------------------ register ---------------------------------//
+Route::controller(RegisterController::class)->group(function () {
+    Route::get('/register', 'register')->name('register');
+    Route::post('/register','storeUser')->name('register');    
+});
+
+// -------------------------- main dashboard ----------------------//
+Route::controller(HomeController::class)->group(function () {
+    Route::get('/home', 'index')->name('home');
+});
