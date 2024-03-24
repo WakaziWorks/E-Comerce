@@ -20,6 +20,7 @@
                 <a class="navbar-brand fw-bold" id="logo" href="{{ route('home') }}">
                     <img src="{{ asset('images/WhatsApp_Image_2024-02-28_at_15.48.15-removebg-preview.png') }}" height="90px" width="110px">
                 </a>
+                <div></div>
                 <form class="search-form" role="search">
                     <div class="input-group">
                         <input class="form-control me-2" type="search" placeholder="I am looking for..." aria-label="Search">
@@ -100,6 +101,6 @@
             function toggleMenu() {
                 var dropdownContent = document.querySelector('.dropdown-content');
                 dropdownContent.style.display === 'block' ? dropdownContent.style.display = 'none' : dropdownContent.style.display = 'block';
-                }
+            }
         </script>
     </div>

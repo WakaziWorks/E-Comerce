@@ -33,31 +33,25 @@
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
         </div>
         <div class="carousel-inner ratio ratio-21x9">
-            <div class="carousel-item active" data-bs-interval="6000">
-                <video src="{{ asset('images/vid2.mp4') }}" class="d-block h-20 w-100" autoplay muted loop></video>
+            <div class="carousel-item active" data-bs-interval="3000">
+                <video src="{{ asset('images/Universe.mp4') }}" class="d-block h-20 w-100" autoplay muted loop></video>
                 <!-- <div class="carousel-caption">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                     <button><a href="#collection">EXPLORE</a></button>
                     <button><a href="#features">EXPLORE</a></button>
                 </div> -->
             </div>
-            <div class="carousel-item" data-bs-interval="6000">
-                <video src="{{ asset('images/vid1.mp4') }}" class="d-block h-20 w-100" autoplay muted loop></video>
-                <!-- <div class="carousel-caption">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    <button>SHOP</button>
-                    <button>EXPLORE</button>
-                </div> -->
+            <div class="carousel-item" data-bs-interval="3000">
+                <video src="{{ asset('images/Pottery.mp4') }}" class="d-block h-20 w-100" autoplay muted loop></video>
             </div>
-            <div class="carousel-item" data-bs-interval="6000">
-                <video src="{{ asset('images/vid3.mp4') }}" class="d-block h-20 w-100" autoplay muted loop></video>
-                <!-- <div class="carousel-caption">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    <button>SHOP</button>
-                    <button>EXPLORE</button>
-                </div> -->
+            <div class="carousel-item" data-bs-interval="3000">
+                <video src="{{ asset('images/Handtools.mp4') }}" class="d-block h-20 w-100" autoplay muted loop></video>
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+                <video src="{{ asset('images/Abstract.mp4') }}" class="d-block h-20 w-100" autoplay muted loop></video>
             </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
