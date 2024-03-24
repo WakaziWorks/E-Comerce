@@ -22,36 +22,6 @@
                     <a class="navbar-brand fw-bold" id="logo" href="{{ route('home') }}">
                         <img src="{{ asset('images/WhatsApp_Image_2024-02-28_at_15.48.15-removebg-preview.png') }}" height="90px" width="110px">
                     </a>
-<<<<<<< HEAD
-                    <a href="" style="margin: 10px; text-decoration: none;" id="popup-trigger">
-                        <img src="{{ asset('images/person-check.svg') }}" />
-                        <span>Account</span>
-                    </a>
-                    <a href="" style="margin: 10px; text-decoration: none;">
-                        <img src="{{ asset('images/patch-question-fill.svg') }}" />
-                        <span>Help</span>
-                    </a>
-                </div>
-                <div class="popup" id="popup">
-                    <div class="popup-content">
-                        <h5 style="text-align: center;">Welcome Guest</h5>
-                        <p style="text-align: center;">Manage Cart, Orders & Wishlist</p>
-                        <hr />
-                        @if (Route::has('login'))
-                        <div class="sm:fixed sm:top-0 sm:right-0 p-6 text-right z-10">
-                            @auth
-                            <a href="{{ url('/home') }}" class="font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Home</a>
-                            @else
-                            <a href="{{ route('login') }}" class="font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500"><button class="signin-btn">Sign In</button></a>
-                            @if (Route::has('register'))
-                            <a href="{{ route('register') }}" class="ml-4 font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500"><button class="signup-btn">Sign Up</button></a>
-                            @endif
-                            @endauth
-                        </div>
-                        @endif
-                    </div>
-=======
->>>>>>> 9fe34890 (nav fixes)
                 </div>
             </div>
             <div class="menu-toggle1" onclick="toggleNavs()">
@@ -104,8 +74,8 @@
                     </div>
                 </div>
             <!-- </div> -->
-            <!-- <div>
-                <nav class="f-nav-two" style="margin-top: 0;">
+            <div>
+                <nav class="f-nav-four" style="margin-top: 0;">
                     <ul class="row-btn">
                         <li><a href="{{ route('home') }}"><span>Home</span></a></li>
                         <li><a href="{{ route('products') }}"><span>Products</span></a></li>
@@ -114,13 +84,9 @@
                         <li><a href="{{ route('features') }}"><span>Features</span></a></li>
                     </ul>
                 </nav>
-            </div> -->
+            </div>
         </div>
-<<<<<<< HEAD
         <hr style="margin-bottom: 0; margin-top: 0;" />
-=======
-        <!-- <hr style="margin-bottom: 0; margin-top: 0;"/> -->
->>>>>>> 9fe34890 (nav fixes)
         <script>
             const popupTrigger = document.getElementById('popup-trigger');
             const popup = document.getElementById('popup');

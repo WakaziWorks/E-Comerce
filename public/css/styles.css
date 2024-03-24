@@ -11090,6 +11090,25 @@ section.cta:before {
   display: flex;
   align-items: center;
 }
+.f-nav-four {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 33em;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #000;
+}
+.f-nav-four li{
+  list-style-type: none;
+}
+.f-nav-four a{
+  text-decoration: none;
+  color: #000;
+  padding-left: 20px;
+}
 
 .menu-toggle1 {
   display: none;
@@ -11109,7 +11128,8 @@ section.cta:before {
 }
 @media only screen and (max-width: 600px) {
   .f-nav-two,
-  .f-nav-three {
+  .f-nav-three,
+  .f-nav-four {
       display: none;
   }
   .f-nav-two.visible,
@@ -11196,14 +11216,6 @@ section.cta:before {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin-left: 0.15em;
 }
-/* Second Navbar */
-/* .f-nav-two {
-  display: flex;
-  justify-content: center;
-  margin-left: 33em;
-  margin-top: 0;
-  margin-bottom: 0;
-} */
 .row-btn {
   display: flex;
   justify-content: center;
@@ -11489,6 +11501,3 @@ section.cta:before {
   width: 90%;
   margin-bottom: 3rem;
 }
-
-
-/* Small devices */
