@@ -11072,14 +11072,50 @@ section.cta:before {
   background: #f5f1f7;
   margin: 0;
 }
-.f-nav{
+.nav{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
-  padding: 5px;
-  margin-left: 5em;
-  margin-right: 3em;
+}
+.f-nav{
+  display: flex;
+  align-items: center;
+}
+.f-nav-two{
+  display: flex;
+  align-items: center;
+  width: 70%;
+}
+.f-nav-three{
+  display: flex;
+  align-items: center;
+}
+
+.menu-toggle1 {
+  display: none;
+}
+.menu-toggle1 .dash {
+  width: 25px;
+  height: 3px;
+  background-color: gray;
+  margin: 5px 0;
+  border-radius: 5px;
+}
+@media only screen and (max-width: 600px) {
+  .menu-toggle1 {
+      display: block;
+      cursor: pointer;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .f-nav-two,
+  .f-nav-three {
+      display: none;
+  }
+  .f-nav-two.visible,
+  .f-nav-three.visible {
+      display: block;
+  }
 }
 .search-form{
   flex-grow: 1;
@@ -11161,13 +11197,13 @@ section.cta:before {
   margin-left: 0.15em;
 }
 /* Second Navbar */
-.f-nav-two {
+/* .f-nav-two {
   display: flex;
   justify-content: center;
   margin-left: 33em;
   margin-top: 0;
   margin-bottom: 0;
-}
+} */
 .row-btn {
   display: flex;
   justify-content: center;
@@ -11288,7 +11324,7 @@ section.cta:before {
 /* Carousel section */
 #carouselExampleCaptions{
   width: 98%;
-  margin-top: 100px;
+  margin-top: 90px;
   margin-left: 20px;
 }
 .carousel-caption {
@@ -11455,3 +11491,4 @@ section.cta:before {
 }
 
 
+/* Small devices */
