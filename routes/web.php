@@ -80,23 +80,23 @@ require __DIR__ . '/auth.php';
 // Route::delete('/delete-cart-product', [ProductController::class, 'deleteProduct'])->name('delete.cart.product');
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 
 // -----------------------------login-------------------------------//
-Route::controller(LoginController::class)->group(function () {
-    Route::get('/login', 'login')->name('login');
-    Route::post('/login', 'authenticate');
-    Route::get('/logout', 'logout')->name('logout');
-});
+// Route::controller(LoginController::class)->group(function () {
+//     Route::get('/login', 'login')->name('login');
+//     Route::post('/login', 'authenticate');
+//     Route::get('/logout', 'logout')->name('logout');
+// });
 
-// ------------------------------ register ---------------------------------//
-Route::controller(RegisterController::class)->group(function () {
-    Route::get('/register', 'register')->name('register');
-    Route::post('/register','storeUser')->name('register');    
-});
+// // ------------------------------ register ---------------------------------//
+// Route::controller(RegisterController::class)->group(function () {
+//     Route::get('/register', 'register')->name('register');
+//     Route::post('/register','storeUser')->name('register');    
+// });
 
-// -------------------------- main dashboard ----------------------//
-Route::controller(HomeController::class)->group(function () {
-    Route::get('/home', 'index')->name('home');
-});
+// // -------------------------- main dashboard ----------------------//
+// Route::controller(HomeController::class)->group(function () {
+//     Route::get('/home', 'index')->name('home');
+// });
