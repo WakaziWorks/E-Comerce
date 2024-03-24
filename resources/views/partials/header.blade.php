@@ -1,5 +1,6 @@
     <div class="header fixed-top">
         <div class="nav">
+            
             <div class="f-nav">
                 <div class="dropdown" style="margin-left: 30px;">
                     <div class="menu-toggle" onclick="toggleMenu()">
@@ -47,16 +48,16 @@
                         <p style="text-align: center;">Manage Cart, Orders & Wishlist</p>
                         <hr />
                         @if (Route::has('login'))
-                            <div class="sm:fixed sm:top-0 sm:right-0 p-6 text-right z-10">
-                                @auth
-                                    <a href="{{ url('/home') }}" class="font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Home</a>
-                                @else
-                                    <a href="{{ route('login') }}" class="font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500"><button class="signin-btn">Sign In</button></a>
-                                    @if (Route::has('register'))
-                                        <a href="{{ route('register') }}" class="ml-4 font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500"><button class="signup-btn">Sign Up</button></a>
-                                    @endif
-                                @endauth
-                            </div>
+                        <div class="sm:fixed sm:top-0 sm:right-0 p-6 text-right z-10">
+                            @auth
+                            <a href="{{ url('/home') }}" class="font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Home</a>
+                            @else
+                            <a href="{{ route('login') }}" class="font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500"><button class="signin-btn">Sign In</button></a>
+                            @if (Route::has('register'))
+                            <a href="{{ route('register') }}" class="ml-4 font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500"><button class="signup-btn">Sign Up</button></a>
+                            @endif
+                            @endauth
+                        </div>
                         @endif
                     </div>
                 </div>
@@ -71,7 +72,7 @@
                 </ul>
             </nav>
         </div>
-        <hr style="margin-bottom: 0; margin-top: 0;"/>
+        <hr style="margin-bottom: 0; margin-top: 0;" />
         <script>
             const popupTrigger = document.getElementById('popup-trigger');
             const popup = document.getElementById('popup');
@@ -98,6 +99,7 @@
                     popup.classList.remove('show');
                 }
             });
+
             function toggleMenu() {
                 var dropdownContent = document.querySelector('.dropdown-content');
                 dropdownContent.style.display === 'block' ? dropdownContent.style.display = 'none' : dropdownContent.style.display = 'block';
