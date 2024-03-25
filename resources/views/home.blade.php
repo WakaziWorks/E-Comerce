@@ -38,7 +38,7 @@
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
         </div>
         <div class="carousel-inner ratio ratio-21x9">
-            <div class="carousel-item active" data-bs-interval="3000">
+            <div class="carousel-item active" data-bs-interval="5000">
                 <video src="{{ asset('images/Universe.mp4') }}" class="d-block h-20 w-100" autoplay muted loop></video>
                 <!-- <div class="carousel-caption">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -46,13 +46,13 @@
                     <button><a href="#features">EXPLORE</a></button>
                 </div> -->
             </div>
-            <div class="carousel-item" data-bs-interval="3000">
+            <div class="carousel-item" data-bs-interval="5000">
                 <video src="{{ asset('images/Pottery.mp4') }}" class="d-block h-20 w-100" autoplay muted loop></video>
             </div>
-            <div class="carousel-item" data-bs-interval="3000">
+            <div class="carousel-item" data-bs-interval="5000">
                 <video src="{{ asset('images/Handtools.mp4') }}" class="d-block h-20 w-100" autoplay muted loop></video>
             </div>
-            <div class="carousel-item" data-bs-interval="3000">
+            <div class="carousel-item" data-bs-interval="5000">
                 <video src="{{ asset('images/Abstract.mp4') }}" class="d-block h-20 w-100" autoplay muted loop></video>
             </div>
         </div>
