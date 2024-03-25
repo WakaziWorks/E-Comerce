@@ -74,16 +74,14 @@
                     </div>
                 </div>
             <!-- </div> -->
-            <div>
-                <nav class="f-nav-four" style="margin-top: 0;">
-                    <ul class="row-btn">
-                        <li><a href="{{ route('home') }}"><span>Home</span></a></li>
-                        <li><a href="{{ route('products') }}"><span>Products</span></a></li>
-                        <li><a href="{{ route('collections') }}"><span>Collections</span></a></li>
-                        <li><a href="{{ route('blog') }}"><span>Blog</span></a></li>
-                        <li><a href="{{ route('features') }}"><span>Features</span></a></li>
-                    </ul>
-                </nav>
+            <div class="f-nav-four">
+                <ul class="row-btn">
+                    <li><a href="{{ route('home') }}"><span>Home</span></a></li>
+                    <li><a href="{{ route('products') }}"><span>Products</span></a></li>
+                    <li><a href="{{ route('collections') }}"><span>Collections</span></a></li>
+                    <li><a href="{{ route('blog') }}"><span>Blog</span></a></li>
+                    <li><a href="{{ route('features') }}"><span>Features</span></a></li>
+                </ul>
             </div>
         </div>
         <hr style="margin-bottom: 0; margin-top: 0;" />
@@ -122,10 +120,12 @@
             function toggleNavs() {
                 var fNavTwo = document.querySelector('.f-nav-two');
                 var fNavThree = document.querySelector('.f-nav-three');
+                var fNavFour = document.querySelector('.f-nav-four');
                 
                 // Toggle visibility of f-nav-two and f-nav-three
                 fNavTwo.classList.toggle('visible');
                 fNavThree.classList.toggle('visible');
+                fNavFour.classList.toggle('visible');
             }
         </script>
     </header>

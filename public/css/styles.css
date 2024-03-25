@@ -11101,15 +11101,15 @@ section.cta:before {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #000;
 }
-.f-nav-four li{
-  list-style-type: none;
+@media only screen and (max-width: 600px) {
+  .f-nav-four {
+    display: block;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+  }
 }
-.f-nav-four a{
-  text-decoration: none;
-  color: #000;
-  padding-left: 20px;
-}
-
 .menu-toggle1 {
   display: none;
 }
@@ -11133,8 +11133,12 @@ section.cta:before {
       display: none;
   }
   .f-nav-two.visible,
-  .f-nav-three.visible {
+  .f-nav-three.visible,
+  .f-nav-four.visible {
       display: block;
+  }
+  .f-nav-two{
+    width: 100%;
   }
 }
 .search-form{
@@ -11233,21 +11237,21 @@ section.cta:before {
   background: #cf3bf7;
   color: #f0f0f0;
 }
-.f-nav-two ul.row-btn {
+.f-nav-four ul.row-btn {
   list-style-type: none;
   padding: 0;
 }
-.f-nav-two ul.row-btn li {
+.f-nav-four ul.row-btn li {
   display: inline-block;
   margin-right: 2em;
 }
-.f-nav-two ul.row-btn li:last-child {
+.f-nav-four ul.row-btn li:last-child {
   margin-right: 0;
 }
-.f-nav-two ul.row-btn li a {
+.f-nav-four ul.row-btn li a {
   text-decoration: none;
 }
-.f-nav-two ul.row-btn li a span {
+.f-nav-four ul.row-btn li a span {
   color: black;
   font-weight: bold;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -11256,7 +11260,7 @@ section.cta:before {
   padding: 3px 7px;
   transition: background-color 0.9s ease;
 }
-.f-nav-two ul.row-btn li a span:hover{
+.f-nav-four ul.row-btn li a span:hover{
   color: white;
   background: purple;
 }
