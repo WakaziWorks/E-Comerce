@@ -35,7 +35,7 @@
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <!-- <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button> -->
         </div>
         <div class="carousel-inner ratio ratio-21x9">
             <div class="carousel-item active" data-bs-interval="5000">
@@ -62,14 +62,14 @@
                     <button style="font-size: 1.2em;"><a href="#collection">Discover more</a></button>
                 </div>
             </div>
-            <div class="carousel-item" data-bs-interval="5000">
+            <!-- <div class="carousel-item" data-bs-interval="5000">
                 <video src="{{ asset('images/Abstract.mp4') }}" class="d-block h-20 w-100" autoplay muted loop></video>
                 <div class="carousel-caption">
-                    <h1 class="heading-h1" style="color: #1a0520;">Queen of all sciences.</h1>
-                    <p style="color: #1a0520;">Art is the queen of all sciences communicating knowledge to all the generations of the world." </p>
+                    <h1 class="heading-h1" style="color: #d2c71a;">Queen of all sciences.</h1>
+                    <p style="color: #d2c71a;">Art is the queen of all sciences communicating knowledge to all the generations of the world." </p>
                     <button style="font-size: 1.2em;"><a href="#collection">Discover more</a></button>
                 </div>
-            </div>
+            </div> -->
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
