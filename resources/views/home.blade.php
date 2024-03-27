@@ -40,20 +40,35 @@
         <div class="carousel-inner ratio ratio-21x9">
             <div class="carousel-item active" data-bs-interval="5000">
                 <video src="{{ asset('images/Universe.mp4') }}" class="d-block h-20 w-100" autoplay muted loop></video>
-                <!-- <div class="carousel-caption">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    <button><a href="#collection">EXPLORE</a></button>
-                    <button><a href="#features">EXPLORE</a></button>
-                </div> -->
+                <div class="carousel-caption">
+                    <h1 class="heading-h1">Artisans are the Alchemists.</h1>
+                    <p>Artisans are the alchemists of our time,  turning ordinary materials into works of wonder." </p>
+                    <button style="font-size: 1.2em;"><a href="#collection">Discover more</a></button>
+                </div>
             </div>
             <div class="carousel-item" data-bs-interval="5000">
                 <video src="{{ asset('images/Pottery.mp4') }}" class="d-block h-20 w-100" autoplay muted loop></video>
+                <div class="carousel-caption">
+                    <h1 class="heading-h1">The true Artisan.</h1>
+                    <p>The true artisan is a seeker of beauty and truth, a philosopher of the tangible." </p>
+                    <button style="font-size: 1.2em;"><a href="#collection">Discover more</a></button>
+                </div>
             </div>
             <div class="carousel-item" data-bs-interval="5000">
                 <video src="{{ asset('images/Handtools.mp4') }}" class="d-block h-20 w-100" autoplay muted loop></video>
+                <div class="carousel-caption">
+                    <h1 class="heading-h1">The silent Philosophers.</h1>
+                    <p>Artisans are the silent philosophers of society, shaping the world with their hands and minds." </p>
+                    <button style="font-size: 1.2em;"><a href="#collection">Discover more</a></button>
+                </div>
             </div>
             <div class="carousel-item" data-bs-interval="5000">
                 <video src="{{ asset('images/Abstract.mp4') }}" class="d-block h-20 w-100" autoplay muted loop></video>
+                <div class="carousel-caption">
+                    <h1 class="heading-h1" style="color: #1a0520;">Queen of all sciences.</h1>
+                    <p style="color: #1a0520;">Art is the queen of all sciences communicating knowledge to all the generations of the world." </p>
+                    <button style="font-size: 1.2em;"><a href="#collection">Discover more</a></button>
+                </div>
             </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
