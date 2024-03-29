@@ -42,7 +42,7 @@
                 <video src="{{ asset('images/Universe.mp4') }}" class="d-block h-20 w-100" autoplay muted loop></video>
                 <div class="carousel-caption">
                     <h1 class="heading-h1">Artisans are the Alchemists.</h1>
-                    <p>Artisans are the alchemists of our time,  turning ordinary materials into works of wonder." </p>
+                    <p>Artisans are the alchemists of our time,  turning ordinary materials into works of wonder.</p>
                     <button style="font-size: 1.2em;"><a href="#collection">Discover more</a></button>
                 </div>
             </div>
@@ -50,7 +50,7 @@
                 <video src="{{ asset('images/Pottery.mp4') }}" class="d-block h-20 w-100" autoplay muted loop></video>
                 <div class="carousel-caption">
                     <h1 class="heading-h1">The true Artisan.</h1>
-                    <p>The true artisan is a seeker of beauty and truth, a philosopher of the tangible." </p>
+                    <p>The true artisan is a seeker of beauty and truth, a philosopher of the tangible.</p>
                     <button style="font-size: 1.2em;"><a href="#collection">Discover more</a></button>
                 </div>
             </div>
@@ -58,7 +58,7 @@
                 <video src="{{ asset('images/Handtools.mp4') }}" class="d-block h-20 w-100" autoplay muted loop></video>
                 <div class="carousel-caption">
                     <h1 class="heading-h1">The silent Philosophers.</h1>
-                    <p>Artisans are the silent philosophers of society, shaping the world with their hands and minds." </p>
+                    <p>Artisans are the silent philosophers of society, shaping the world with their hands and minds. </p>
                     <button style="font-size: 1.2em;"><a href="#collection">Discover more</a></button>
                 </div>
             </div>

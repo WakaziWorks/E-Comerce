@@ -5986,10 +5986,22 @@ textarea.form-control-lg {
   transform: translateY(-50%);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.carousel-caption h1{
+@media only screen and (max-width: 768px){
+  .carousel-caption{
+    top: 35%;
+  }
+}
+.carousel-caption .heading-h1{
   text-align: start;
   font-size: 4.5em;
   margin-bottom: 0.325em;
+}
+@media only screen and (max-width: 768px){
+  .carousel-caption .heading-h1{
+    text-align: start;
+    font-size: 1.2em;
+    margin-bottom: 0.45em;
+  }
 }
 .carousel-caption p{
   font-size: 2.3em;
@@ -5997,6 +6009,12 @@ textarea.form-control-lg {
   font-weight: normal;
   width: 70%;
   margin-bottom: 0.8em;
+}
+@media only screen and (max-width: 768px){
+  .carousel-caption p{
+    font-size: 0.85em;
+    text-align: start;
+  }
 }
 .carousel-caption a{
   text-decoration: none;
@@ -6011,7 +6029,19 @@ textarea.form-control-lg {
   border: none;
   outline: none;
 }
-
+@media only screen and (max-width: 768px){
+  .carousel-caption button{
+    display: flex;
+    border-radius: 1px;
+    justify-content: center;
+    align-items: center;
+    width: 5em;
+    height: 18px;
+  }
+  .carousel-caption a{
+    font-size: 10px;
+  }
+}
 .carousel-dark .carousel-control-prev-icon,
 .carousel-dark .carousel-control-next-icon {
   filter: invert(1) grayscale(100);
@@ -11142,6 +11172,12 @@ section.cta:before {
     padding: 0;
     font-size: 16px;
   }
+  .f-nav-four .row-btn{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+  }
 }
 .menu-toggle1 {
   display: none;
@@ -11173,6 +11209,7 @@ section.cta:before {
   .f-nav-three.visible,
   .f-nav-four.visible {
       display: block;
+      display: flex;
       flex-direction: column;
   }
   .f-nav-two{
@@ -11189,6 +11226,7 @@ section.cta:before {
   .icons{
     display: flex;
     flex-direction: column;
+    width: 100vw;
   }
   .icons a{
     padding: 6px;
@@ -11203,7 +11241,6 @@ section.cta:before {
   .f-nav-four.visible{
     display: flex;
     flex-direction: column;
-    align-items: center;
   }
 }
 .search-form{
@@ -11224,6 +11261,11 @@ section.cta:before {
   background: #e5b9f1;
   padding: 6px;
   border-radius: 7px;
+}
+@media only screen and (max-width: 768px){
+  .menu-toggle{
+    display: none;
+  }
 }
 .dash {
   width: 25px;
