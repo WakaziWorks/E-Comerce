@@ -11542,7 +11542,8 @@ section.cta:before {
 
 /* Cart page styling */
 .main-section{
-  margin-top: 5em;
+  margin-top: 8em;
+  margin-bottom: 8em;
   justify-content: center;
   align-items: center;
   text-align: center;

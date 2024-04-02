@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\PostsController;
 use App\Http\Controllers\Auth\RegisterController;
@@ -20,19 +21,19 @@ use App\Http\Controllers\MpesaSTKPUSHController;
 |
 */
 
-Route::get('/', function () {
-    return Inertia::render('Welcome', [
-        'canLogin' => Route::has('login'),
-        'canRegister' => Route::has('register'),
-        'laravelVersion' => Application::VERSION,
-        'phpVersion' => PHP_VERSION,
-    ]);
-});
+// Route::get('/', function () {
+//     return Inertia::render('Welcome', [
+//         'canLogin' => Route::has('login'),
+//         'canRegister' => Route::has('register'),
+//         'laravelVersion' => Application::VERSION,
+//         'phpVersion' => PHP_VERSION,
+//     ]);
+// });
 
 Route::get("/posts", [PostsController::class, 'index']);
 Route::get('/', function () {
     return view('home');
-})->name('home');
+})->name('landing');
 
 Route::get('/products', function () {
     return view('products');
@@ -82,21 +83,23 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-
 // -----------------------------login-------------------------------//
 Route::controller(LoginController::class)->group(function () {
-    Route::get('/login', 'login')->name('login');
-    Route::post('/login', 'authenticate');
-    Route::get('/logout', 'logout')->name('logout');
+    // Route::get('/login', 'login')->name('login');
+    // Route::post('/login', 'authenticate');
+    // Route::get('/logout', 'logout')->name('logout');
+    Route::get('/login', [LoginController::class, 'login'])->name('login');
+    Route::post('/login', [LoginController::class, 'authenticate']);
+    Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
 });
 
 // // ------------------------------ register ---------------------------------//
 Route::controller(RegisterController::class)->group(function () {
-    Route::get('/register', 'register')->name('register');
-    Route::post('/register','storeUser')->name('register');    
+    // Route::get('/register', 'register')->name('register');
+    // Route::post('/register','storeUser')->name('register');    
+    Route::get('/register', [RegisterController::class, 'register'])->name('register');
+    Route::post('/register', [RegisterController::class, 'storeUser'])->name('register');
 });
 
 // -------------------------- main dashboard ----------------------//
-Route::controller(HomeController::class)->group(function () {
-    Route::get('/home', 'index')->name('home');
-});
+Route::get('/home', [HomeController::class, 'index'])->name('home');

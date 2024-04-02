@@ -12,7 +12,7 @@ return new class extends Migration
     public function up()
 {
     Schema::create('employees', function (Blueprint $table) {
-        $table->id('EmployeeID'); // Auto-incrementing primary key
+        $table->id(); // Auto-incrementing primary key
         $table->string('LastName');
         $table->string('FirstName');
         $table->string('Title')->nullable(); // Assuming this can be nullable
