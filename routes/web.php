@@ -1,9 +1,10 @@
 <?php
 
-use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\PostsController;
 use App\Http\Controllers\Auth\RegisterController;
+use App\Http\Controllers\HomeController;
+
 use App\Http\Controllers\Auth\LoginController;
 
 use Illuminate\Foundation\Application;
@@ -35,17 +36,10 @@ use App\Http\Controllers\MpesaSTKPUSHController;
 Route::get("/posts", [PostsController::class, 'index']);
 Route::get('/', function () {
     return view('home');
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 })->name('landing');
 
-=======
-});
->>>>>>> eaa59e5a (fix)
-=======
-})->name('home');
 
->>>>>>> 6ba6bdb5 (Revert "fix")
 Route::get('/products', function () {
     return view('products');
 })->name('products');
@@ -83,10 +77,7 @@ Route::middleware('auth')->group(function () {
 Route::post('/v1/mpesatest/stk/push', [MpesaSTKPUSHController::class, 'STKPush']);
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 6ba6bdb5 (Revert "fix")
+
 require __DIR__ . '/auth.php';
 
 // Route::get('/dashboard', [ProductController::class, 'index']);  
@@ -98,7 +89,6 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-<<<<<<< HEAD
 // -----------------------------login-------------------------------//
 Route::controller(LoginController::class)->group(function () {
     // Route::get('/login', 'login')->name('login');
@@ -107,31 +97,25 @@ Route::controller(LoginController::class)->group(function () {
     Route::get('/login', [LoginController::class, 'login'])->name('login');
     Route::post('/login', [LoginController::class, 'authenticate']);
     Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
-=======
 
 // -----------------------------login-------------------------------//
 Route::controller(LoginController::class)->group(function () {
     Route::get('/login', 'login')->name('login');
     Route::post('/login', 'authenticate');
     Route::get('/logout', 'logout')->name('logout');
->>>>>>> 6ba6bdb5 (Revert "fix")
 });
 
 // // ------------------------------ register ---------------------------------//
 Route::controller(RegisterController::class)->group(function () {
-<<<<<<< HEAD
-    // Route::get('/register', 'register')->name('register');
-    // Route::post('/register','storeUser')->name('register');    
+    Route::get('/register', 'register')->name('register');
+    Route::post('/register','storeUser')->name('register');    
     Route::get('/register', [RegisterController::class, 'register'])->name('register');
     Route::post('/register', [RegisterController::class, 'storeUser'])->name('register');
 });
 
 // -------------------------- main dashboard ----------------------//
 Route::get('/home', [HomeController::class, 'index'])->name('home');
-=======
 require __DIR__.'/auth.php';
->>>>>>> eaa59e5a (fix)
-=======
     Route::get('/register', 'register')->name('register');
     Route::post('/register','storeUser')->name('register');    
 });
@@ -140,4 +124,3 @@ require __DIR__.'/auth.php';
 Route::controller(HomeController::class)->group(function () {
     Route::get('/home', 'index')->name('home');
 });
->>>>>>> 6ba6bdb5 (Revert "fix")
