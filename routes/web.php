@@ -1,9 +1,11 @@
+
+
 <?php
 
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\PostsController;
-use App\Http\Controllers\Auth\RegisterController;
+
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
@@ -31,33 +33,23 @@ use App\Http\Controllers\MpesaSTKPUSHController;
 // });
 
 Route::get("/posts", [PostsController::class, 'index']);
-Route::get('/', function () {
+Route::get('/home', function () {
     return view('home');
+<<<<<<< HEAD
 })->name('landing');
 
+=======
+});
+>>>>>>> eaa59e5a (fix)
 Route::get('/products', function () {
     return view('products');
-})->name('products');
-
-Route::get('/cart', function () {
+});
+Route::get('/cart', function() {
     return view('cart');
-})->name('cart');
-
-Route::get('/blog', function () {
+});
+Route::get('/blog', function() {
     return view('blog');
-})->name('blog');
-
-Route::get('/collections', function () {
-    return view('collections');
-})->name('collections');
-
-Route::get('/features', function () {
-    return view('features');
-})->name('features');
-
-Route::get('/collaborations', function () {
-    return view('collaborations');
-})->name('collaborations');
+});
 
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
@@ -72,6 +64,7 @@ Route::middleware('auth')->group(function () {
 Route::post('/v1/mpesatest/stk/push', [MpesaSTKPUSHController::class, 'STKPush']);
 
 
+<<<<<<< HEAD
 require __DIR__ . '/auth.php';
 
 // Route::get('/dashboard', [ProductController::class, 'index']);  
@@ -103,3 +96,6 @@ Route::controller(RegisterController::class)->group(function () {
 
 // -------------------------- main dashboard ----------------------//
 Route::get('/home', [HomeController::class, 'index'])->name('home');
+=======
+require __DIR__.'/auth.php';
+>>>>>>> eaa59e5a (fix)

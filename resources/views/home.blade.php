@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="utf-8" />
+<<<<<<< HEAD
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -14,6 +15,17 @@
     <!-- Bootstrap icons-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
 
+=======
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Wakazi Works</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+
+>>>>>>> c7ab5c83 (updated - links)
     <!-- Google fonts-->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,600;1,600&amp;display=swap" rel="stylesheet" />
@@ -35,6 +47,7 @@
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+<<<<<<< HEAD
             <!-- <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button> -->
         </div>
         <div class="carousel-inner ratio ratio-21x9">
@@ -70,6 +83,34 @@
                     <button style="font-size: 1.2em;"><a href="#collection">Discover more</a></button>
                 </div>
             </div> -->
+=======
+        </div>
+        <div class="carousel-inner ratio ratio-21x9">
+            <div class="carousel-item active" data-bs-interval="6000">
+                <video src="{{ asset('images/vid2.mp4') }}" class="d-block h-20 w-100" autoplay muted loop></video>
+                <div class="carousel-caption">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <button><a href="#collection">EXPLORE</a></button>
+                    <button><a href="#features">EXPLORE</a></button>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="6000">
+                <video src="{{ asset('images/vid1.mp4') }}" class="d-block h-20 w-100" autoplay muted loop></video>
+                <div class="carousel-caption">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <button>SHOP</button>
+                    <button>EXPLORE</button>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="6000">
+                <video src="{{ asset('images/vid3.mp4') }}" class="d-block h-20 w-100" autoplay muted loop></video>
+                <div class="carousel-caption">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <button>SHOP</button>
+                    <button>EXPLORE</button>
+                </div>
+            </div>
+>>>>>>> c7ab5c83 (updated - links)
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -126,7 +167,11 @@
 
     <!-- Collections -->
     <div class="collection-container" id="collection">
+<<<<<<< HEAD
         <h1>Shop by collections</h1>
+=======
+        <h1>Collections</h1>
+>>>>>>> c7ab5c83 (updated - links)
         <hr />
         <div class="row">
             <div class="collection-col col-12 col-md mx-3">
@@ -168,13 +213,21 @@
     <!-- Product Section -->
     <section id="products" class="py-5">
         <div class="container">
+<<<<<<< HEAD
             <h2 class="text-center font-alt mb-5" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight: lighter;">Featured Products</h2>
+=======
+            <h2 class="text-center font-alt mb-5">Featured Products</h2>
+>>>>>>> c7ab5c83 (updated - links)
             <div class="row g-4">
                 <!-- Product 1 -->
                 <div class="col-md-6 col-lg-4">
                     <div class="card product-card">
+<<<<<<< HEAD
                     <img src="{{ asset('images/electronics.jpg') }}" alt="..." /></a>                        
                     <div class="card-body">
+=======
+                    <img src="{{ asset('images/electronics.jpg') }}" alt="..." /></a>                        <div class="card-body">
+>>>>>>> c7ab5c83 (updated - links)
                             <h5 class="card-title">Electronics</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                             <a href="#" class="btn btn-primary">View Details</a>
@@ -209,7 +262,11 @@
     </section>
 
     <!-- App features section-->
+<<<<<<< HEAD
     <section id="features" id="features" style="background: #e6cbee;">
+=======
+    <section id="features" id="features">
+>>>>>>> c7ab5c83 (updated - links)
         <div class="container px-5">
             <div class="row gx-5 align-items-center">
                 <div class="col-lg-8 order-lg-1 mb-5 mb-lg-0">
@@ -288,7 +345,11 @@
         </div>
     </section>
     <!-- Quote/testimonial aside-->
+<<<<<<< HEAD
     <!-- <aside class="text-center bg-secondary">
+=======
+    <aside class="text-center bg-secondary">
+>>>>>>> c7ab5c83 (updated - links)
         <div class="container px-5">
             <div class="row gx-5 justify-content-center">
                 <div class="col-xl-8">
@@ -297,7 +358,11 @@
                 </div>
             </div>
         </div>
+<<<<<<< HEAD
     </aside> -->
+=======
+    </aside>
+>>>>>>> c7ab5c83 (updated - links)
     <!-- Basic features section-->
     <section class="bg-light">
         <div class="container px-5">
@@ -313,7 +378,11 @@
         </div>
     </section>
     <!-- Call to action section-->
+<<<<<<< HEAD
     <!-- <section class="cta">
+=======
+    <section class="cta">
+>>>>>>> c7ab5c83 (updated - links)
         <div class="cta-content">
             <div class="container px-5">
                 <h2 class="text-white display-1 lh-1 mb-4">
@@ -324,9 +393,15 @@
                 <a class="btn btn-outline-light py-3 px-4 rounded-pill" href="https://startbootstrap.com/theme/new-age" target="_blank">Download for free</a>
             </div>
         </div>
+<<<<<<< HEAD
     </section> -->
     <!-- App badge section-->
     <section class="bg-white-primary-to-secondary" id="download" style="#e6cbee">
+=======
+    </section>
+    <!-- App badge section-->
+    <section class="bg-white-primary-to-secondary" id="download">
+>>>>>>> c7ab5c83 (updated - links)
         <div class="container px-5">
             <h2 class="text-center text-purple font-alt mb-4">Get the app now!</h2>
             <div class="d-flex flex-column flex-lg-row align-items-center justify-content-center">
