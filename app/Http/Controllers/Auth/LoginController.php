@@ -11,7 +11,7 @@ use DB;
 use App\Models\User;
 use Carbon\Carbon;
 use Session;
-// use Brian2694\Toastr\Facades\Toastr;
+use Brian2694\Toastr\Facades\Toastr;
 
 class LoginController extends Controller
 {

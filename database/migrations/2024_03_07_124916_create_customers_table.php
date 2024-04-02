@@ -12,7 +12,11 @@ return new class extends Migration
     public function up()
     {
         Schema::create('customers', function (Blueprint $table) {
+<<<<<<< HEAD
             $table->id(); // Assuming you want an auto-incrementing primary key named CustomerID
+=======
+            $table->id('CustomerID'); // Assuming you want an auto-incrementing primary key named CustomerID
+>>>>>>> 6ba6bdb5 (Revert "fix")
             $table->string('CustomerName');
             $table->string('Affiliation')->nullable(); // Assuming Affiliation can be nullable
             $table->string('Phone1');
