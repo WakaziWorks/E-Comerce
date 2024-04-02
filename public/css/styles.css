@@ -11539,7 +11539,6 @@ section.cta:before {
   margin-bottom: 0;
   margin-left: 25px;
 }
-
 /* Cart page styling */
 .main-section{
   margin-top: 8em;
@@ -11602,4 +11601,40 @@ section.cta:before {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   width: 90%;
   margin-bottom: 3rem;
+}
+
+/* Collections section */
+.main-collection{
+  margin: 6em 2em;
+  justify-content: center;
+  align-items: center;
+}
+.main-collection button{
+  width: 100%;
+  background: #800080;
+  color: #fff;
+  outline: none;
+  border: none;
+  padding: 0.5em;
+  font-weight: bolder;
+  font-size: larger;
+  border-radius: 0.23em;
+}
+.row .col{
+  border-radius: 0.3em;
+  margin-right: 25px;
+  width: 20%;
+  border: 1px solid #AD88C6;
+  text-align: center;
+}
+.row .col:hover{
+  background-color: #800080;
+  cursor: pointer;
+  border: none;
+}
+.row .col h5{
+  color: #AD88C6;
+}
+.row .col h5:hover{
+  color: #fff;
 }
