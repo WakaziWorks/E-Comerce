@@ -79,8 +79,8 @@
                     <li><a href="{{ route('home') }}"><span>Home</span></a></li>
                     <li><a href="{{ route('products') }}"><span>Products</span></a></li>
                     <li><a href="{{ route('collections') }}"><span>Collections</span></a></li>
-                    <li><a href="{{ route('blog') }}"><span>Blog</span></a></li>
                     <li><a href="{{ route('features') }}"><span>Features</span></a></li>
+                    <li><a href="{{ route('blog') }}"><span>Blog</span></a></li>
                 </ul>
             </div>
         </div>

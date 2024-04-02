@@ -11413,7 +11413,6 @@ section.cta:before {
 /* Footer section */
 .main-footer{
   padding-top: 60px;
-  margin-bottom: 60px;
   background-color: #AD88C6;
 }
 .col i{
@@ -11542,39 +11541,30 @@ section.cta:before {
 }
 
 /* Cart page styling */
-.cart-page{
-  margin-top: 12rem;
-  margin-bottom: 8rem;
-}
-.cart-contents{
-  display: flex;
-  flex-direction: column;
+.main-section{
+  margin-top: 5em;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
-}
-.cart-contents button{
-  background-color: purple;
-  border: none;
-  outline: none;
-  padding: 10px;
-  color: white;
-  width: 15rem;
-}
-.cart-contents h1{
-  color: purple;
-}
-.cart-contents a{
-  color: purple;
-}
-.cart-contents p{
-  margin-top: 2rem;
   text-align: center;
-  color: purple;
 }
-.cart-contents p:hover{
-  font-weight: normal;
+.main-section h2{
+  color: #800080;
+  margin-top: 0.5em;
 }
+.main-section button{
+  color: #fff;
+  background-color: #800080;
+  padding: 10px;
+  outline: none;
+  border: none;
+  font-weight: bolder;
+  margin-top: 0.5em;
+}
+.basket{
+  font-size: 5em;
+  color: #800080;
+}
+
 /* Blog site */
 .blog{
   margin-top: 9rem;

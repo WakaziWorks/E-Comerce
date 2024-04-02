@@ -27,7 +27,11 @@
     <body>
         @extends("partials.header")
         @section('content')
-
+        <section class="main-section">
+            <i class="basket bi bi-basket"></i>
+            <h2>Empty Cart</h2>
+            <a href="{{ route('products') }}"><button>Continue Shopping</button></a>
+        </section>
         @extends("partials.footer")
     </body>
 </html>
