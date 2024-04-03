@@ -26,25 +26,7 @@
     </head>
     <body>
         @extends('partials.header')
-        <section class="main-collection">
-            <a><button>Browse by Collection</button></a>
-            <div class="container text-center">
-                <div class="row align-items-start">
-                    <div class="col col-md-6 col-lg-4">
-                        <h5>Jewellery</h5>
-                    </div>
-                    <div class="col col-md-6 col-lg-4">
-                        <h5>Bags and Purse</h5>
-                    </div>
-                    <div class="col col-md-6 col-lg-4">
-                        <h5>Home and Decor</h5>
-                    </div>
-                    <div class="col col-md-6 col-lg-4">
-                        <h5>Accesories</h5>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <section style="margin-top: 120px;">
         @extends('partials.footer')
     </body>
 </html>

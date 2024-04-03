@@ -12,10 +12,10 @@ return new class extends Migration
     public function up()
 {
     Schema::create('products', function (Blueprint $table) {
-        $table->id();
+        $table->id('ProductID');
         $table->string('ProductName');
-        // $table->foreignId('SupplierID')->constrained()->onDelete('cascade');
-        // $table->foreignId('CategoryID')->constrained()->onDelete('cascade');
+        $table->foreignId('SupplierID')->constrained()->onDelete('cascade');
+        $table->foreignId('CategoryID')->constrained()->onDelete('cascade');
         $table->string('QuantityPerUnit')->nullable(); // This column's requirement depends on your business logic
         $table->decimal('UnitPrice', 8, 2); // Example precision: 999,999.99
         $table->integer('UnitsInStock');
@@ -23,8 +23,8 @@ return new class extends Migration
         $table->integer('ReorderLevel');
         $table->boolean('Discontinued')->default(false); // false means not discontinued
         $table->timestamps(); // Adds created_at and updated_at columns
-        $table->foreignId('Supplier_id')->constrained('suppliers')->onDelete('cascade');
-        $table->foreignId('Category_id')->constrained('categories')->onDelete('cascade');
+        $table->foreignId('SupplierID')->constrained('suppliers')->onDelete('cascade');
+$table->foreignId('CategoryID')->constrained('categories')->onDelete('cascade');
 
     });
 }

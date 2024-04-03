@@ -12,13 +12,8 @@ return new class extends Migration
     public function up()
 {
     Schema::create('orders', function (Blueprint $table) {
-<<<<<<< HEAD
-        $table->id();
-        $table->foreign('customer_id', 'orders_customer_id_foreign')->references('customer_id')->on('customers')->onDelete('cascade');
-=======
         $table->id('OrderID');
         $table->foreignId('CustomerID')->constrained()->onDelete('cascade');
->>>>>>> 6ba6bdb5 (Revert "fix")
         $table->foreignId('EmployeeID')->constrained()->onDelete('cascade');
         $table->dateTime('OrderDate');
         $table->dateTime('RequiredDate');

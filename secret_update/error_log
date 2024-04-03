@@ -85,13 +85,3 @@
 [28-Feb-2024 11:16:31 UTC] PHP Parse error:  syntax error, unexpected '}', expecting end of file in /home/hexanetc/wakazi.co.ke/upload.php on line 62
 [28-Feb-2024 11:16:31 UTC] PHP Parse error:  syntax error, unexpected '}', expecting end of file in /home/hexanetc/wakazi.co.ke/upload.php on line 62
 [28-Feb-2024 11:16:32 UTC] PHP Parse error:  syntax error, unexpected '}', expecting end of file in /home/hexanetc/wakazi.co.ke/upload.php on line 62
-[23-Mar-2024 17:58:03 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'hexanetc_upload'@'localhost' (using password: YES) in /home/rpqthfue/wakazi.co.ke/secret_update/index.php:10
-Stack trace:
-#0 /home/rpqthfue/wakazi.co.ke/secret_update/index.php(10): mysqli->__construct('localhost', 'hexanetc_upload', '13917295!GdaguG...', 'hexanetc_w_uplo...')
-#1 {main}
-  thrown in /home/rpqthfue/wakazi.co.ke/secret_update/index.php on line 10
-[23-Mar-2024 17:58:03 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'hexanetc_upload'@'localhost' (using password: YES) in /home/rpqthfue/wakazi.co.ke/secret_update/index.php:10
-Stack trace:
-#0 /home/rpqthfue/wakazi.co.ke/secret_update/index.php(10): mysqli->__construct('localhost', 'hexanetc_upload', '13917295!GdaguG...', 'hexanetc_w_uplo...')
-#1 {main}
-  thrown in /home/rpqthfue/wakazi.co.ke/secret_update/index.php on line 10

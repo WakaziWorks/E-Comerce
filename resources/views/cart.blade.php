@@ -1,4 +1,4 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8" />
@@ -26,12 +26,13 @@
     </head>
     <body>
         @extends("partials.header")
-        @section('content')
-        <section class="main-section">
-            <i class="basket bi bi-basket"></i>
-            <h2>Empty Cart</h2>
-            <a href="{{ route('products') }}"><button>Continue Shopping</button></a>
-        </section>
+        <div class="cart-page">
+            <div class="cart-contents">
+                <h1>Your cart is empty</h1>
+                <button>Continue shopping</button>
+                <p>Have an account? <br /> <a href="...">Login</a> to checkout faster</p>
+            </div>
+        </div>
         @extends("partials.footer")
     </body>
 </html>
